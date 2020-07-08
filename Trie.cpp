@@ -1,22 +1,23 @@
 #include "Trie.h"
 #include <iostream>
 
-/**
- * print the trie in dfs fashion
- */
-void Trie::_print(TrieNode * root) {
-	const std::map<char, TrieNode*> children = root->getChildren();
-
-	for (auto it = children.begin(); it != children.end(); it++) {
-		std::cout << it->first << " ";
-		if(it->second->isEndOfWord())
-		    std::cout<<"\n";
-		this->_print(it->second);
-	}
-}
-
 Trie::Trie() {
 	this->root = new TrieNode(false);
+}
+
+Trie::~Trie() {
+
+}
+
+void Trie::_print(std::ostream &out, TrieNode * root) const {
+    const std::map<char, TrieNode*> children = root->getChildren();
+
+    for (auto it = children.begin(); it != children.end(); it++) {
+        std::cout << it->first << " ";
+        if(it->second->isEndOfWord())
+            std::cout<<"\n";
+        this->_print(it->second);
+    }
 }
 
 void Trie::insert(std::string entry) {
@@ -48,20 +49,27 @@ void Trie::insert(char entry[]) {
 	this->insert(std::string(entry));
 }
 
-void Trie::print() {
-	this->_print(this->root);
-}
-
-
-Trie::~Trie() {
-
-}
-
 void Trie::remove(std::string entry) {
 
 }
 
 bool Trie::search(std::string needle) {
+
+    return this->_search(needle) != nullptr;
+}
+
+std::set<std::string> Trie::prefixSearch(std::string prefix) {
+    TrieNode* endOfPrefixNode = this->_search(prefix);
+    std::set<std::string> keySet;
+
+    if(endOfPrefixNode) {
+
+    }
+
+    return keySet;
+}
+
+TrieNode *Trie::_search(std::string needle) {
 
     int i, len;
     bool stop;
@@ -76,11 +84,18 @@ bool Trie::search(std::string needle) {
         if(nextHop) {
             runner = nextHop;
         } else
-            return false;
+            return nullptr;
     }
 
     // handle the last letter
     if(nextHop == nullptr || !nextHop->isEndOfWord())
-        return false;
-    return true;
+        return nullptr;
+    return nextHop;
+}
+
+std::ostream &operator<<(std::ostream &os, const Trie &trie) {
+
+    trie._print(os, trie.root);
+
+    return os;
 }

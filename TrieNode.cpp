@@ -52,3 +52,7 @@ const std::map<char, TrieNode*>& TrieNode::getChildren() {
 TrieNode::~TrieNode() {
 	
 }
+
+bool TrieNode::hasChildren() {
+    return this->children.size();
+}

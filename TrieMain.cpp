@@ -12,7 +12,7 @@ int main(int argc, char *argv[]) {
 	trie.insert("paddle");
 	trie.insert("pandemic");
 
-	//trie.print();
+	cout<< trie <<endl;
 
 	cout<< endl << trie.search("paddle") << endl;
 

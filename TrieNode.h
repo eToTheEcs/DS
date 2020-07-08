@@ -17,6 +17,7 @@ public:
 	//char getValue();
 	bool isEndOfWord();
 	void setEndOfWord(bool eow);
+	bool hasChildren();
 	TrieNode* getChild(char symbol);
 	TrieNode* addChild(char symbol, bool isEOW);
 	const std::map<char, TrieNode*>& getChildren();
