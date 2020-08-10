@@ -43,7 +43,7 @@ TrieNode* TrieNode::addChild(char symbol, bool isEOW) {
 	return nullptr;
 }
 
-const std::map<char, TrieNode*>& TrieNode::getChildren() {
+const std::map<char, TrieNode*>& TrieNode::getChildren() const {
 	
 	return this->children;
 }
@@ -53,6 +53,21 @@ TrieNode::~TrieNode() {
 	
 }
 
-bool TrieNode::hasChildren() {
+int TrieNode::numChildren() {
     return this->children.size();
+}
+
+std::ostream &operator<<(std::ostream &out, const TrieNode &node) {
+
+    out<< "EOW: " << node.endOfWord << std::endl;
+    out<< "NODE HAS " << node.children.size() << " CHILDREN" << std::endl;
+    out<< "{ ";
+
+    auto it = node.children.begin();
+    auto secondLast = std::prev(node.children.end(), 1);
+    for(; it != secondLast; it++)
+        out<< it->first << ", ";
+    out<< it->first << " } "<< std::endl;
+
+    return out;
 }

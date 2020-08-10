@@ -14,7 +14,21 @@ int main(int argc, char *argv[]) {
 
 	cout<< trie <<endl;
 
-	cout<< endl << trie.search("paddle") << endl;
+	cout<< endl << trie.search("peter") << endl;
+
+	trie.prefixSearch("pe");
+	trie.prefixSearch("pa");
+
+	cout<< "PREFIX SEARCH:" << endl;
+
+	set<string> results = trie.prefixSearch("p");
+
+	if(!results.size()) {
+	    cout<< "NO RESULTS FOUND\n";
+	} else {
+        for (auto it = results.begin(); it != results.end(); it++)
+            cout << *it << "\n";
+    }
 
 	return 0;
 }

@@ -17,9 +17,11 @@ public:
 	//char getValue();
 	bool isEndOfWord();
 	void setEndOfWord(bool eow);
-	bool hasChildren();
+	int numChildren();
 	TrieNode* getChild(char symbol);
 	TrieNode* addChild(char symbol, bool isEOW);
-	const std::map<char, TrieNode*>& getChildren();
+	const std::map<char, TrieNode*>& getChildren() const;
+
+	friend std::ostream& operator<<(std::ostream &out, const TrieNode &node);
 };
 

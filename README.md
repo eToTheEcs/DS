@@ -1,2 +1,2 @@
 # DS
-C++ data structures implementations 
+a simple autocomplete API, written in C++
