@@ -1,2 +1,2 @@
-# DS
-a simple autocomplete API, written in C++
+# Suggest
+A simple autocomplete API, written in C++
