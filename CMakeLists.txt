@@ -6,8 +6,10 @@ set(CMAKE_CXX_STANDARD 14)
 include_directories(.)
 
 add_executable(DS
-        Trie.cpp
-        Trie.h
+        Trie_lib/Trie.cpp
+        Trie_lib/Trie.h
         TrieMain.cpp
-        TrieNode.cpp
-        TrieNode.h)
+        Trie_lib/TrieNode.cpp
+        Trie_lib/TrieNode.h)
+
+add_subdirectory(google_tests)
