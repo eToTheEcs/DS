@@ -59,19 +59,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /snap/clion/123/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /snap/clion/129/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /snap/clion/123/bin/cmake/linux/bin/cmake -E rm -f
+RM = /snap/clion/129/bin/cmake/linux/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /media/nbenatti/Progetti/DS
+CMAKE_SOURCE_DIR = /media/aelysium/Progetti/DS
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /media/nbenatti/Progetti/DS/cmake-build-debug
+CMAKE_BINARY_DIR = /media/aelysium/Progetti/DS/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -79,59 +79,37 @@ CMAKE_BINARY_DIR = /media/nbenatti/Progetti/DS/cmake-build-debug
 # Special rule for the target install/strip
 install/strip: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/snap/clion/123/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+	/snap/clion/129/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip
 
 # Special rule for the target install/strip
 install/strip/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/snap/clion/123/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+	/snap/clion/129/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip/fast
 
 # Special rule for the target install/local
 install/local: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/snap/clion/123/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+	/snap/clion/129/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local
 
 # Special rule for the target install/local
 install/local/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/snap/clion/123/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+	/snap/clion/129/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local/fast
-
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/snap/clion/123/bin/cmake/linux/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/snap/clion/123/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
 
 # Special rule for the target install
 install: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/snap/clion/123/bin/cmake/linux/bin/cmake -P cmake_install.cmake
+	/snap/clion/129/bin/cmake/linux/bin/cmake -P cmake_install.cmake
 .PHONY : install
 
 # Special rule for the target install
 install/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/snap/clion/123/bin/cmake/linux/bin/cmake -P cmake_install.cmake
+	/snap/clion/129/bin/cmake/linux/bin/cmake -P cmake_install.cmake
 .PHONY : install/fast
 
 # Special rule for the target list_install_components
@@ -144,11 +122,33 @@ list_install_components/fast: list_install_components
 
 .PHONY : list_install_components/fast
 
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/snap/clion/129/bin/cmake/linux/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
+
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/snap/clion/129/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
+
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /media/nbenatti/Progetti/DS/cmake-build-debug/CMakeFiles /media/nbenatti/Progetti/DS/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /media/aelysium/Progetti/DS/cmake-build-debug/CMakeFiles /media/aelysium/Progetti/DS/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /media/nbenatti/Progetti/DS/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /media/aelysium/Progetti/DS/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -188,6 +188,32 @@ DS: cmake_check_build_system
 DS/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/DS.dir/build.make CMakeFiles/DS.dir/build
 .PHONY : DS/fast
+
+#=============================================================================
+# Target rules for targets named Trie_run
+
+# Build rule for target.
+Trie_run: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Trie_run
+.PHONY : Trie_run
+
+# fast build rule for target.
+Trie_run/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Trie_run.dir/build.make CMakeFiles/Trie_run.dir/build
+.PHONY : Trie_run/fast
+
+#=============================================================================
+# Target rules for targets named Trie_lib
+
+# Build rule for target.
+Trie_lib: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Trie_lib
+.PHONY : Trie_lib
+
+# fast build rule for target.
+Trie_lib/fast:
+	$(MAKE) $(MAKESILENT) -f Trie_lib/CMakeFiles/Trie_lib.dir/build.make Trie_lib/CMakeFiles/Trie_lib.dir/build
+.PHONY : Trie_lib/fast
 
 #=============================================================================
 # Target rules for targets named google_tests_run
@@ -261,6 +287,7 @@ TrieMain.o: TrieMain.cpp.o
 # target to build an object file
 TrieMain.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/DS.dir/build.make CMakeFiles/DS.dir/TrieMain.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Trie_run.dir/build.make CMakeFiles/Trie_run.dir/TrieMain.cpp.o
 .PHONY : TrieMain.cpp.o
 
 TrieMain.i: TrieMain.cpp.i
@@ -270,6 +297,7 @@ TrieMain.i: TrieMain.cpp.i
 # target to preprocess a source file
 TrieMain.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/DS.dir/build.make CMakeFiles/DS.dir/TrieMain.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Trie_run.dir/build.make CMakeFiles/Trie_run.dir/TrieMain.cpp.i
 .PHONY : TrieMain.cpp.i
 
 TrieMain.s: TrieMain.cpp.s
@@ -279,61 +307,8 @@ TrieMain.s: TrieMain.cpp.s
 # target to generate assembly for a file
 TrieMain.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/DS.dir/build.make CMakeFiles/DS.dir/TrieMain.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Trie_run.dir/build.make CMakeFiles/Trie_run.dir/TrieMain.cpp.s
 .PHONY : TrieMain.cpp.s
-
-Trie_lib/Trie.o: Trie_lib/Trie.cpp.o
-
-.PHONY : Trie_lib/Trie.o
-
-# target to build an object file
-Trie_lib/Trie.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DS.dir/build.make CMakeFiles/DS.dir/Trie_lib/Trie.cpp.o
-.PHONY : Trie_lib/Trie.cpp.o
-
-Trie_lib/Trie.i: Trie_lib/Trie.cpp.i
-
-.PHONY : Trie_lib/Trie.i
-
-# target to preprocess a source file
-Trie_lib/Trie.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DS.dir/build.make CMakeFiles/DS.dir/Trie_lib/Trie.cpp.i
-.PHONY : Trie_lib/Trie.cpp.i
-
-Trie_lib/Trie.s: Trie_lib/Trie.cpp.s
-
-.PHONY : Trie_lib/Trie.s
-
-# target to generate assembly for a file
-Trie_lib/Trie.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DS.dir/build.make CMakeFiles/DS.dir/Trie_lib/Trie.cpp.s
-.PHONY : Trie_lib/Trie.cpp.s
-
-Trie_lib/TrieNode.o: Trie_lib/TrieNode.cpp.o
-
-.PHONY : Trie_lib/TrieNode.o
-
-# target to build an object file
-Trie_lib/TrieNode.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DS.dir/build.make CMakeFiles/DS.dir/Trie_lib/TrieNode.cpp.o
-.PHONY : Trie_lib/TrieNode.cpp.o
-
-Trie_lib/TrieNode.i: Trie_lib/TrieNode.cpp.i
-
-.PHONY : Trie_lib/TrieNode.i
-
-# target to preprocess a source file
-Trie_lib/TrieNode.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DS.dir/build.make CMakeFiles/DS.dir/Trie_lib/TrieNode.cpp.i
-.PHONY : Trie_lib/TrieNode.cpp.i
-
-Trie_lib/TrieNode.s: Trie_lib/TrieNode.cpp.s
-
-.PHONY : Trie_lib/TrieNode.s
-
-# target to generate assembly for a file
-Trie_lib/TrieNode.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DS.dir/build.make CMakeFiles/DS.dir/Trie_lib/TrieNode.cpp.s
-.PHONY : Trie_lib/TrieNode.cpp.s
 
 # Help Target
 help:
@@ -348,6 +323,8 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... DS"
+	@echo "... Trie_lib"
+	@echo "... Trie_run"
 	@echo "... gmock"
 	@echo "... gmock_main"
 	@echo "... google_tests_run"
@@ -356,12 +333,6 @@ help:
 	@echo "... TrieMain.o"
 	@echo "... TrieMain.i"
 	@echo "... TrieMain.s"
-	@echo "... Trie_lib/Trie.o"
-	@echo "... Trie_lib/Trie.i"
-	@echo "... Trie_lib/Trie.s"
-	@echo "... Trie_lib/TrieNode.o"
-	@echo "... Trie_lib/TrieNode.i"
-	@echo "... Trie_lib/TrieNode.s"
 .PHONY : help
 
 

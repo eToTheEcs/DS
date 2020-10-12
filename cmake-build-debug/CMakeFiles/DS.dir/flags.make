@@ -6,5 +6,5 @@ CXX_FLAGS = -g   -std=gnu++14
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/media/nbenatti/Progetti/DS/. 
+CXX_INCLUDES = -I/media/aelysium/Progetti/DS/Trie_lib 
 

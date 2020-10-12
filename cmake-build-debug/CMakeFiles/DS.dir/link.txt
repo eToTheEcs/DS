@@ -1,1 +1,1 @@
-/usr/bin/c++  -g   CMakeFiles/DS.dir/Trie_lib/Trie.cpp.o CMakeFiles/DS.dir/TrieMain.cpp.o CMakeFiles/DS.dir/Trie_lib/TrieNode.cpp.o  -o DS 
+/usr/bin/c++  -g   CMakeFiles/DS.dir/TrieMain.cpp.o  -o DS 

@@ -2,14 +2,15 @@ cmake_minimum_required(VERSION 3.15)
 project(DS)
 
 set(CMAKE_CXX_STANDARD 14)
+set(SOURCE_FILES TrieMain.cpp)
 
-include_directories(.)
+add_executable(Trie_run ${SOURCE_FILES})
 
-add_executable(DS
-        Trie_lib/Trie.cpp
-        Trie_lib/Trie.h
-        TrieMain.cpp
-        Trie_lib/TrieNode.cpp
-        Trie_lib/TrieNode.h)
+include_directories(Trie_lib)
+add_subdirectory(Trie_lib)
+
+add_executable(DS ${SOURCE_FILES})
+
+target_link_libraries(Trie_run Trie_lib)
 
 add_subdirectory(google_tests)

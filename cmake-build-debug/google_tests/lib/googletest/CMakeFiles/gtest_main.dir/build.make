@@ -54,19 +54,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /snap/clion/123/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /snap/clion/129/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /snap/clion/123/bin/cmake/linux/bin/cmake -E rm -f
+RM = /snap/clion/129/bin/cmake/linux/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /media/nbenatti/Progetti/DS
+CMAKE_SOURCE_DIR = /media/aelysium/Progetti/DS
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /media/nbenatti/Progetti/DS/cmake-build-debug
+CMAKE_BINARY_DIR = /media/aelysium/Progetti/DS/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include google_tests/lib/googletest/CMakeFiles/gtest_main.dir/depend.make
@@ -79,16 +79,16 @@ include google_tests/lib/googletest/CMakeFiles/gtest_main.dir/flags.make
 
 google_tests/lib/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o: google_tests/lib/googletest/CMakeFiles/gtest_main.dir/flags.make
 google_tests/lib/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o: ../google_tests/lib/googletest/src/gtest_main.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/nbenatti/Progetti/DS/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object google_tests/lib/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o"
-	cd /media/nbenatti/Progetti/DS/cmake-build-debug/google_tests/lib/googletest && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gtest_main.dir/src/gtest_main.cc.o -c /media/nbenatti/Progetti/DS/google_tests/lib/googletest/src/gtest_main.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/aelysium/Progetti/DS/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object google_tests/lib/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o"
+	cd /media/aelysium/Progetti/DS/cmake-build-debug/google_tests/lib/googletest && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gtest_main.dir/src/gtest_main.cc.o -c /media/aelysium/Progetti/DS/google_tests/lib/googletest/src/gtest_main.cc
 
 google_tests/lib/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gtest_main.dir/src/gtest_main.cc.i"
-	cd /media/nbenatti/Progetti/DS/cmake-build-debug/google_tests/lib/googletest && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /media/nbenatti/Progetti/DS/google_tests/lib/googletest/src/gtest_main.cc > CMakeFiles/gtest_main.dir/src/gtest_main.cc.i
+	cd /media/aelysium/Progetti/DS/cmake-build-debug/google_tests/lib/googletest && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /media/aelysium/Progetti/DS/google_tests/lib/googletest/src/gtest_main.cc > CMakeFiles/gtest_main.dir/src/gtest_main.cc.i
 
 google_tests/lib/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gtest_main.dir/src/gtest_main.cc.s"
-	cd /media/nbenatti/Progetti/DS/cmake-build-debug/google_tests/lib/googletest && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /media/nbenatti/Progetti/DS/google_tests/lib/googletest/src/gtest_main.cc -o CMakeFiles/gtest_main.dir/src/gtest_main.cc.s
+	cd /media/aelysium/Progetti/DS/cmake-build-debug/google_tests/lib/googletest && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /media/aelysium/Progetti/DS/google_tests/lib/googletest/src/gtest_main.cc -o CMakeFiles/gtest_main.dir/src/gtest_main.cc.s
 
 # Object files for target gtest_main
 gtest_main_OBJECTS = \
@@ -100,9 +100,9 @@ gtest_main_EXTERNAL_OBJECTS =
 lib/libgtest_maind.a: google_tests/lib/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o
 lib/libgtest_maind.a: google_tests/lib/googletest/CMakeFiles/gtest_main.dir/build.make
 lib/libgtest_maind.a: google_tests/lib/googletest/CMakeFiles/gtest_main.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/media/nbenatti/Progetti/DS/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library ../../../lib/libgtest_maind.a"
-	cd /media/nbenatti/Progetti/DS/cmake-build-debug/google_tests/lib/googletest && $(CMAKE_COMMAND) -P CMakeFiles/gtest_main.dir/cmake_clean_target.cmake
-	cd /media/nbenatti/Progetti/DS/cmake-build-debug/google_tests/lib/googletest && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/gtest_main.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/media/aelysium/Progetti/DS/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library ../../../lib/libgtest_maind.a"
+	cd /media/aelysium/Progetti/DS/cmake-build-debug/google_tests/lib/googletest && $(CMAKE_COMMAND) -P CMakeFiles/gtest_main.dir/cmake_clean_target.cmake
+	cd /media/aelysium/Progetti/DS/cmake-build-debug/google_tests/lib/googletest && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/gtest_main.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 google_tests/lib/googletest/CMakeFiles/gtest_main.dir/build: lib/libgtest_maind.a
@@ -110,10 +110,10 @@ google_tests/lib/googletest/CMakeFiles/gtest_main.dir/build: lib/libgtest_maind.
 .PHONY : google_tests/lib/googletest/CMakeFiles/gtest_main.dir/build
 
 google_tests/lib/googletest/CMakeFiles/gtest_main.dir/clean:
-	cd /media/nbenatti/Progetti/DS/cmake-build-debug/google_tests/lib/googletest && $(CMAKE_COMMAND) -P CMakeFiles/gtest_main.dir/cmake_clean.cmake
+	cd /media/aelysium/Progetti/DS/cmake-build-debug/google_tests/lib/googletest && $(CMAKE_COMMAND) -P CMakeFiles/gtest_main.dir/cmake_clean.cmake
 .PHONY : google_tests/lib/googletest/CMakeFiles/gtest_main.dir/clean
 
 google_tests/lib/googletest/CMakeFiles/gtest_main.dir/depend:
-	cd /media/nbenatti/Progetti/DS/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /media/nbenatti/Progetti/DS /media/nbenatti/Progetti/DS/google_tests/lib/googletest /media/nbenatti/Progetti/DS/cmake-build-debug /media/nbenatti/Progetti/DS/cmake-build-debug/google_tests/lib/googletest /media/nbenatti/Progetti/DS/cmake-build-debug/google_tests/lib/googletest/CMakeFiles/gtest_main.dir/DependInfo.cmake --color=$(COLOR)
+	cd /media/aelysium/Progetti/DS/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /media/aelysium/Progetti/DS /media/aelysium/Progetti/DS/google_tests/lib/googletest /media/aelysium/Progetti/DS/cmake-build-debug /media/aelysium/Progetti/DS/cmake-build-debug/google_tests/lib/googletest /media/aelysium/Progetti/DS/cmake-build-debug/google_tests/lib/googletest/CMakeFiles/gtest_main.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : google_tests/lib/googletest/CMakeFiles/gtest_main.dir/depend
 

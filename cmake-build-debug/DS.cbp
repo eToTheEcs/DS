@@ -5,134 +5,226 @@
 		<Option title="DS"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;CMake Files\google_tests\;CMake Files\google_tests\lib\;CMake Files\google_tests\lib\googlemock\;CMake Files\google_tests\lib\googlemock\cmake\;CMake Files\google_tests\lib\googletest\;CMake Files\google_tests\lib\googletest\cmake\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\Trie_lib\;CMake Files\google_tests\;CMake Files\google_tests\lib\;CMake Files\google_tests\lib\googlemock\;CMake Files\google_tests\lib\googlemock\cmake\;CMake Files\google_tests\lib\googletest\;CMake Files\google_tests\lib\googletest\cmake\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/media/nbenatti/Progetti/DS/cmake-build-debug"/>
+				<Option working_dir="/media/aelysium/Progetti/DS/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/media/nbenatti/Progetti/DS/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/media/nbenatti/Progetti/DS/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/media/nbenatti/Progetti/DS/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/media/nbenatti/Progetti/DS/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j16 -f &quot;/media/aelysium/Progetti/DS/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/media/aelysium/Progetti/DS/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/media/aelysium/Progetti/DS/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/media/aelysium/Progetti/DS/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="install/strip">
-				<Option working_dir="/media/nbenatti/Progetti/DS/cmake-build-debug"/>
+				<Option working_dir="/media/aelysium/Progetti/DS/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/media/nbenatti/Progetti/DS/cmake-build-debug/Makefile&quot;  VERBOSE=1 install/strip"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/media/nbenatti/Progetti/DS/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/media/nbenatti/Progetti/DS/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/media/nbenatti/Progetti/DS/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j16 -f &quot;/media/aelysium/Progetti/DS/cmake-build-debug/Makefile&quot;  VERBOSE=1 install/strip"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/media/aelysium/Progetti/DS/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/media/aelysium/Progetti/DS/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/media/aelysium/Progetti/DS/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="install/local">
-				<Option working_dir="/media/nbenatti/Progetti/DS/cmake-build-debug"/>
+				<Option working_dir="/media/aelysium/Progetti/DS/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/media/nbenatti/Progetti/DS/cmake-build-debug/Makefile&quot;  VERBOSE=1 install/local"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/media/nbenatti/Progetti/DS/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/media/nbenatti/Progetti/DS/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/media/nbenatti/Progetti/DS/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="DS">
-				<Option output="/media/nbenatti/Progetti/DS/cmake-build-debug/DS" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/media/nbenatti/Progetti/DS/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/media/nbenatti/Progetti/DS/."/>
-					<Add directory="/usr/include/c++/9"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
-					<Add directory="/usr/include/c++/9/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/media/nbenatti/Progetti/DS/cmake-build-debug/Makefile&quot;  VERBOSE=1 DS"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/media/nbenatti/Progetti/DS/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/media/nbenatti/Progetti/DS/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/media/nbenatti/Progetti/DS/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="DS/fast">
-				<Option output="/media/nbenatti/Progetti/DS/cmake-build-debug/DS" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/media/nbenatti/Progetti/DS/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/media/nbenatti/Progetti/DS/."/>
-					<Add directory="/usr/include/c++/9"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
-					<Add directory="/usr/include/c++/9/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/media/nbenatti/Progetti/DS/cmake-build-debug/Makefile&quot;  VERBOSE=1 DS/fast"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/media/nbenatti/Progetti/DS/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/media/nbenatti/Progetti/DS/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/media/nbenatti/Progetti/DS/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="rebuild_cache">
-				<Option working_dir="/media/nbenatti/Progetti/DS/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/media/nbenatti/Progetti/DS/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/media/nbenatti/Progetti/DS/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/media/nbenatti/Progetti/DS/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/media/nbenatti/Progetti/DS/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="edit_cache">
-				<Option working_dir="/media/nbenatti/Progetti/DS/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/media/nbenatti/Progetti/DS/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/media/nbenatti/Progetti/DS/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/media/nbenatti/Progetti/DS/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/media/nbenatti/Progetti/DS/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j16 -f &quot;/media/aelysium/Progetti/DS/cmake-build-debug/Makefile&quot;  VERBOSE=1 install/local"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/media/aelysium/Progetti/DS/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/media/aelysium/Progetti/DS/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/media/aelysium/Progetti/DS/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="install">
-				<Option working_dir="/media/nbenatti/Progetti/DS/cmake-build-debug"/>
+				<Option working_dir="/media/aelysium/Progetti/DS/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/media/nbenatti/Progetti/DS/cmake-build-debug/Makefile&quot;  VERBOSE=1 install"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/media/nbenatti/Progetti/DS/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/media/nbenatti/Progetti/DS/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/media/nbenatti/Progetti/DS/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j16 -f &quot;/media/aelysium/Progetti/DS/cmake-build-debug/Makefile&quot;  VERBOSE=1 install"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/media/aelysium/Progetti/DS/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/media/aelysium/Progetti/DS/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/media/aelysium/Progetti/DS/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="list_install_components">
-				<Option working_dir="/media/nbenatti/Progetti/DS/cmake-build-debug"/>
+				<Option working_dir="/media/aelysium/Progetti/DS/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/media/nbenatti/Progetti/DS/cmake-build-debug/Makefile&quot;  VERBOSE=1 list_install_components"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/media/nbenatti/Progetti/DS/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/media/nbenatti/Progetti/DS/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/media/nbenatti/Progetti/DS/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j16 -f &quot;/media/aelysium/Progetti/DS/cmake-build-debug/Makefile&quot;  VERBOSE=1 list_install_components"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/media/aelysium/Progetti/DS/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/media/aelysium/Progetti/DS/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/media/aelysium/Progetti/DS/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="DS">
+				<Option output="/media/aelysium/Progetti/DS/cmake-build-debug/DS" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/media/aelysium/Progetti/DS/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/media/aelysium/Progetti/DS/Trie_lib"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/media/aelysium/Progetti/DS/cmake-build-debug/Makefile&quot;  VERBOSE=1 DS"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/media/aelysium/Progetti/DS/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/media/aelysium/Progetti/DS/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/media/aelysium/Progetti/DS/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="DS/fast">
+				<Option output="/media/aelysium/Progetti/DS/cmake-build-debug/DS" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/media/aelysium/Progetti/DS/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/media/aelysium/Progetti/DS/Trie_lib"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/media/aelysium/Progetti/DS/cmake-build-debug/Makefile&quot;  VERBOSE=1 DS/fast"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/media/aelysium/Progetti/DS/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/media/aelysium/Progetti/DS/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/media/aelysium/Progetti/DS/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Trie_run">
+				<Option output="/media/aelysium/Progetti/DS/cmake-build-debug/Trie_run" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/media/aelysium/Progetti/DS/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/media/aelysium/Progetti/DS/Trie_lib"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/media/aelysium/Progetti/DS/cmake-build-debug/Makefile&quot;  VERBOSE=1 Trie_run"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/media/aelysium/Progetti/DS/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/media/aelysium/Progetti/DS/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/media/aelysium/Progetti/DS/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Trie_run/fast">
+				<Option output="/media/aelysium/Progetti/DS/cmake-build-debug/Trie_run" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/media/aelysium/Progetti/DS/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/media/aelysium/Progetti/DS/Trie_lib"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/media/aelysium/Progetti/DS/cmake-build-debug/Makefile&quot;  VERBOSE=1 Trie_run/fast"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/media/aelysium/Progetti/DS/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/media/aelysium/Progetti/DS/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/media/aelysium/Progetti/DS/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/media/aelysium/Progetti/DS/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/media/aelysium/Progetti/DS/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/media/aelysium/Progetti/DS/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/media/aelysium/Progetti/DS/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/media/aelysium/Progetti/DS/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/media/aelysium/Progetti/DS/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/media/aelysium/Progetti/DS/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/media/aelysium/Progetti/DS/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/media/aelysium/Progetti/DS/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/media/aelysium/Progetti/DS/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Trie_lib">
+				<Option output="/media/aelysium/Progetti/DS/cmake-build-debug/Trie_lib/libTrie_lib.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/media/aelysium/Progetti/DS/cmake-build-debug/Trie_lib"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/media/aelysium/Progetti/DS/Trie_lib"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/media/aelysium/Progetti/DS/cmake-build-debug/Trie_lib/Makefile&quot;  VERBOSE=1 Trie_lib"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/media/aelysium/Progetti/DS/cmake-build-debug/Trie_lib/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/media/aelysium/Progetti/DS/cmake-build-debug/Trie_lib/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/media/aelysium/Progetti/DS/cmake-build-debug/Trie_lib/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Trie_lib/fast">
+				<Option output="/media/aelysium/Progetti/DS/cmake-build-debug/Trie_lib/libTrie_lib.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/media/aelysium/Progetti/DS/cmake-build-debug/Trie_lib"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/media/aelysium/Progetti/DS/Trie_lib"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/media/aelysium/Progetti/DS/cmake-build-debug/Trie_lib/Makefile&quot;  VERBOSE=1 Trie_lib/fast"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/media/aelysium/Progetti/DS/cmake-build-debug/Trie_lib/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/media/aelysium/Progetti/DS/cmake-build-debug/Trie_lib/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/media/aelysium/Progetti/DS/cmake-build-debug/Trie_lib/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="google_tests_run">
-				<Option output="/media/nbenatti/Progetti/DS/cmake-build-debug/google_tests/google_tests_run" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/media/nbenatti/Progetti/DS/cmake-build-debug/google_tests"/>
+				<Option output="/media/aelysium/Progetti/DS/cmake-build-debug/google_tests/google_tests_run" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/media/aelysium/Progetti/DS/cmake-build-debug/google_tests"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/media/nbenatti/Progetti/DS/."/>
-					<Add directory="/media/nbenatti/Progetti/DS/google_tests/lib/googletest/include"/>
-					<Add directory="/media/nbenatti/Progetti/DS/google_tests/lib/googletest"/>
+					<Add directory="/media/aelysium/Progetti/DS/Trie_lib"/>
+					<Add directory="/media/aelysium/Progetti/DS/google_tests/lib/googletest/include"/>
+					<Add directory="/media/aelysium/Progetti/DS/google_tests/lib/googletest"/>
 					<Add directory="/usr/include/c++/9"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
 					<Add directory="/usr/include/c++/9/backward"/>
@@ -142,22 +234,22 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/media/nbenatti/Progetti/DS/cmake-build-debug/google_tests/Makefile&quot;  VERBOSE=1 google_tests_run"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/media/nbenatti/Progetti/DS/cmake-build-debug/google_tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/media/nbenatti/Progetti/DS/cmake-build-debug/google_tests/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/media/nbenatti/Progetti/DS/cmake-build-debug/google_tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j16 -f &quot;/media/aelysium/Progetti/DS/cmake-build-debug/google_tests/Makefile&quot;  VERBOSE=1 google_tests_run"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/media/aelysium/Progetti/DS/cmake-build-debug/google_tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/media/aelysium/Progetti/DS/cmake-build-debug/google_tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/media/aelysium/Progetti/DS/cmake-build-debug/google_tests/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="google_tests_run/fast">
-				<Option output="/media/nbenatti/Progetti/DS/cmake-build-debug/google_tests/google_tests_run" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/media/nbenatti/Progetti/DS/cmake-build-debug/google_tests"/>
+				<Option output="/media/aelysium/Progetti/DS/cmake-build-debug/google_tests/google_tests_run" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/media/aelysium/Progetti/DS/cmake-build-debug/google_tests"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/media/nbenatti/Progetti/DS/."/>
-					<Add directory="/media/nbenatti/Progetti/DS/google_tests/lib/googletest/include"/>
-					<Add directory="/media/nbenatti/Progetti/DS/google_tests/lib/googletest"/>
+					<Add directory="/media/aelysium/Progetti/DS/Trie_lib"/>
+					<Add directory="/media/aelysium/Progetti/DS/google_tests/lib/googletest/include"/>
+					<Add directory="/media/aelysium/Progetti/DS/google_tests/lib/googletest"/>
 					<Add directory="/usr/include/c++/9"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
 					<Add directory="/usr/include/c++/9/backward"/>
@@ -167,24 +259,24 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/media/nbenatti/Progetti/DS/cmake-build-debug/google_tests/Makefile&quot;  VERBOSE=1 google_tests_run/fast"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/media/nbenatti/Progetti/DS/cmake-build-debug/google_tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/media/nbenatti/Progetti/DS/cmake-build-debug/google_tests/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/media/nbenatti/Progetti/DS/cmake-build-debug/google_tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j16 -f &quot;/media/aelysium/Progetti/DS/cmake-build-debug/google_tests/Makefile&quot;  VERBOSE=1 google_tests_run/fast"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/media/aelysium/Progetti/DS/cmake-build-debug/google_tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/media/aelysium/Progetti/DS/cmake-build-debug/google_tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/media/aelysium/Progetti/DS/cmake-build-debug/google_tests/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="gmock_main">
-				<Option output="/media/nbenatti/Progetti/DS/cmake-build-debug/lib/libgmock_maind.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/media/nbenatti/Progetti/DS/cmake-build-debug/google_tests/lib/googlemock"/>
+				<Option output="/media/aelysium/Progetti/DS/cmake-build-debug/lib/libgmock_maind.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/media/aelysium/Progetti/DS/cmake-build-debug/google_tests/lib/googlemock"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/media/nbenatti/Progetti/DS/."/>
-					<Add directory="/media/nbenatti/Progetti/DS/google_tests/lib/googlemock/include"/>
-					<Add directory="/media/nbenatti/Progetti/DS/google_tests/lib/googlemock"/>
-					<Add directory="/media/nbenatti/Progetti/DS/google_tests/lib/googletest/include"/>
-					<Add directory="/media/nbenatti/Progetti/DS/google_tests/lib/googletest"/>
+					<Add directory="/media/aelysium/Progetti/DS/Trie_lib"/>
+					<Add directory="/media/aelysium/Progetti/DS/google_tests/lib/googlemock/include"/>
+					<Add directory="/media/aelysium/Progetti/DS/google_tests/lib/googlemock"/>
+					<Add directory="/media/aelysium/Progetti/DS/google_tests/lib/googletest/include"/>
+					<Add directory="/media/aelysium/Progetti/DS/google_tests/lib/googletest"/>
 					<Add directory="/usr/include/c++/9"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
 					<Add directory="/usr/include/c++/9/backward"/>
@@ -194,24 +286,24 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/media/nbenatti/Progetti/DS/cmake-build-debug/google_tests/lib/googlemock/Makefile&quot;  VERBOSE=1 gmock_main"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/media/nbenatti/Progetti/DS/cmake-build-debug/google_tests/lib/googlemock/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/media/nbenatti/Progetti/DS/cmake-build-debug/google_tests/lib/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/media/nbenatti/Progetti/DS/cmake-build-debug/google_tests/lib/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j16 -f &quot;/media/aelysium/Progetti/DS/cmake-build-debug/google_tests/lib/googlemock/Makefile&quot;  VERBOSE=1 gmock_main"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/media/aelysium/Progetti/DS/cmake-build-debug/google_tests/lib/googlemock/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/media/aelysium/Progetti/DS/cmake-build-debug/google_tests/lib/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/media/aelysium/Progetti/DS/cmake-build-debug/google_tests/lib/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="gmock_main/fast">
-				<Option output="/media/nbenatti/Progetti/DS/cmake-build-debug/lib/libgmock_maind.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/media/nbenatti/Progetti/DS/cmake-build-debug/google_tests/lib/googlemock"/>
+				<Option output="/media/aelysium/Progetti/DS/cmake-build-debug/lib/libgmock_maind.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/media/aelysium/Progetti/DS/cmake-build-debug/google_tests/lib/googlemock"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/media/nbenatti/Progetti/DS/."/>
-					<Add directory="/media/nbenatti/Progetti/DS/google_tests/lib/googlemock/include"/>
-					<Add directory="/media/nbenatti/Progetti/DS/google_tests/lib/googlemock"/>
-					<Add directory="/media/nbenatti/Progetti/DS/google_tests/lib/googletest/include"/>
-					<Add directory="/media/nbenatti/Progetti/DS/google_tests/lib/googletest"/>
+					<Add directory="/media/aelysium/Progetti/DS/Trie_lib"/>
+					<Add directory="/media/aelysium/Progetti/DS/google_tests/lib/googlemock/include"/>
+					<Add directory="/media/aelysium/Progetti/DS/google_tests/lib/googlemock"/>
+					<Add directory="/media/aelysium/Progetti/DS/google_tests/lib/googletest/include"/>
+					<Add directory="/media/aelysium/Progetti/DS/google_tests/lib/googletest"/>
 					<Add directory="/usr/include/c++/9"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
 					<Add directory="/usr/include/c++/9/backward"/>
@@ -221,24 +313,24 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/media/nbenatti/Progetti/DS/cmake-build-debug/google_tests/lib/googlemock/Makefile&quot;  VERBOSE=1 gmock_main/fast"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/media/nbenatti/Progetti/DS/cmake-build-debug/google_tests/lib/googlemock/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/media/nbenatti/Progetti/DS/cmake-build-debug/google_tests/lib/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/media/nbenatti/Progetti/DS/cmake-build-debug/google_tests/lib/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j16 -f &quot;/media/aelysium/Progetti/DS/cmake-build-debug/google_tests/lib/googlemock/Makefile&quot;  VERBOSE=1 gmock_main/fast"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/media/aelysium/Progetti/DS/cmake-build-debug/google_tests/lib/googlemock/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/media/aelysium/Progetti/DS/cmake-build-debug/google_tests/lib/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/media/aelysium/Progetti/DS/cmake-build-debug/google_tests/lib/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="gmock">
-				<Option output="/media/nbenatti/Progetti/DS/cmake-build-debug/lib/libgmockd.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/media/nbenatti/Progetti/DS/cmake-build-debug/google_tests/lib/googlemock"/>
+				<Option output="/media/aelysium/Progetti/DS/cmake-build-debug/lib/libgmockd.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/media/aelysium/Progetti/DS/cmake-build-debug/google_tests/lib/googlemock"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/media/nbenatti/Progetti/DS/."/>
-					<Add directory="/media/nbenatti/Progetti/DS/google_tests/lib/googlemock/include"/>
-					<Add directory="/media/nbenatti/Progetti/DS/google_tests/lib/googlemock"/>
-					<Add directory="/media/nbenatti/Progetti/DS/google_tests/lib/googletest/include"/>
-					<Add directory="/media/nbenatti/Progetti/DS/google_tests/lib/googletest"/>
+					<Add directory="/media/aelysium/Progetti/DS/Trie_lib"/>
+					<Add directory="/media/aelysium/Progetti/DS/google_tests/lib/googlemock/include"/>
+					<Add directory="/media/aelysium/Progetti/DS/google_tests/lib/googlemock"/>
+					<Add directory="/media/aelysium/Progetti/DS/google_tests/lib/googletest/include"/>
+					<Add directory="/media/aelysium/Progetti/DS/google_tests/lib/googletest"/>
 					<Add directory="/usr/include/c++/9"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
 					<Add directory="/usr/include/c++/9/backward"/>
@@ -248,24 +340,24 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/media/nbenatti/Progetti/DS/cmake-build-debug/google_tests/lib/googlemock/Makefile&quot;  VERBOSE=1 gmock"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/media/nbenatti/Progetti/DS/cmake-build-debug/google_tests/lib/googlemock/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/media/nbenatti/Progetti/DS/cmake-build-debug/google_tests/lib/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/media/nbenatti/Progetti/DS/cmake-build-debug/google_tests/lib/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j16 -f &quot;/media/aelysium/Progetti/DS/cmake-build-debug/google_tests/lib/googlemock/Makefile&quot;  VERBOSE=1 gmock"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/media/aelysium/Progetti/DS/cmake-build-debug/google_tests/lib/googlemock/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/media/aelysium/Progetti/DS/cmake-build-debug/google_tests/lib/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/media/aelysium/Progetti/DS/cmake-build-debug/google_tests/lib/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="gmock/fast">
-				<Option output="/media/nbenatti/Progetti/DS/cmake-build-debug/lib/libgmockd.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/media/nbenatti/Progetti/DS/cmake-build-debug/google_tests/lib/googlemock"/>
+				<Option output="/media/aelysium/Progetti/DS/cmake-build-debug/lib/libgmockd.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/media/aelysium/Progetti/DS/cmake-build-debug/google_tests/lib/googlemock"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/media/nbenatti/Progetti/DS/."/>
-					<Add directory="/media/nbenatti/Progetti/DS/google_tests/lib/googlemock/include"/>
-					<Add directory="/media/nbenatti/Progetti/DS/google_tests/lib/googlemock"/>
-					<Add directory="/media/nbenatti/Progetti/DS/google_tests/lib/googletest/include"/>
-					<Add directory="/media/nbenatti/Progetti/DS/google_tests/lib/googletest"/>
+					<Add directory="/media/aelysium/Progetti/DS/Trie_lib"/>
+					<Add directory="/media/aelysium/Progetti/DS/google_tests/lib/googlemock/include"/>
+					<Add directory="/media/aelysium/Progetti/DS/google_tests/lib/googlemock"/>
+					<Add directory="/media/aelysium/Progetti/DS/google_tests/lib/googletest/include"/>
+					<Add directory="/media/aelysium/Progetti/DS/google_tests/lib/googletest"/>
 					<Add directory="/usr/include/c++/9"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
 					<Add directory="/usr/include/c++/9/backward"/>
@@ -275,22 +367,22 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/media/nbenatti/Progetti/DS/cmake-build-debug/google_tests/lib/googlemock/Makefile&quot;  VERBOSE=1 gmock/fast"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/media/nbenatti/Progetti/DS/cmake-build-debug/google_tests/lib/googlemock/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/media/nbenatti/Progetti/DS/cmake-build-debug/google_tests/lib/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/media/nbenatti/Progetti/DS/cmake-build-debug/google_tests/lib/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j16 -f &quot;/media/aelysium/Progetti/DS/cmake-build-debug/google_tests/lib/googlemock/Makefile&quot;  VERBOSE=1 gmock/fast"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/media/aelysium/Progetti/DS/cmake-build-debug/google_tests/lib/googlemock/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/media/aelysium/Progetti/DS/cmake-build-debug/google_tests/lib/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/media/aelysium/Progetti/DS/cmake-build-debug/google_tests/lib/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="gtest_main">
-				<Option output="/media/nbenatti/Progetti/DS/cmake-build-debug/lib/libgtest_maind.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/media/nbenatti/Progetti/DS/cmake-build-debug/google_tests/lib/googletest"/>
+				<Option output="/media/aelysium/Progetti/DS/cmake-build-debug/lib/libgtest_maind.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/media/aelysium/Progetti/DS/cmake-build-debug/google_tests/lib/googletest"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/media/nbenatti/Progetti/DS/."/>
-					<Add directory="/media/nbenatti/Progetti/DS/google_tests/lib/googletest/include"/>
-					<Add directory="/media/nbenatti/Progetti/DS/google_tests/lib/googletest"/>
+					<Add directory="/media/aelysium/Progetti/DS/Trie_lib"/>
+					<Add directory="/media/aelysium/Progetti/DS/google_tests/lib/googletest/include"/>
+					<Add directory="/media/aelysium/Progetti/DS/google_tests/lib/googletest"/>
 					<Add directory="/usr/include/c++/9"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
 					<Add directory="/usr/include/c++/9/backward"/>
@@ -300,22 +392,22 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/media/nbenatti/Progetti/DS/cmake-build-debug/google_tests/lib/googletest/Makefile&quot;  VERBOSE=1 gtest_main"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/media/nbenatti/Progetti/DS/cmake-build-debug/google_tests/lib/googletest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/media/nbenatti/Progetti/DS/cmake-build-debug/google_tests/lib/googletest/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/media/nbenatti/Progetti/DS/cmake-build-debug/google_tests/lib/googletest/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j16 -f &quot;/media/aelysium/Progetti/DS/cmake-build-debug/google_tests/lib/googletest/Makefile&quot;  VERBOSE=1 gtest_main"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/media/aelysium/Progetti/DS/cmake-build-debug/google_tests/lib/googletest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/media/aelysium/Progetti/DS/cmake-build-debug/google_tests/lib/googletest/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/media/aelysium/Progetti/DS/cmake-build-debug/google_tests/lib/googletest/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="gtest_main/fast">
-				<Option output="/media/nbenatti/Progetti/DS/cmake-build-debug/lib/libgtest_maind.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/media/nbenatti/Progetti/DS/cmake-build-debug/google_tests/lib/googletest"/>
+				<Option output="/media/aelysium/Progetti/DS/cmake-build-debug/lib/libgtest_maind.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/media/aelysium/Progetti/DS/cmake-build-debug/google_tests/lib/googletest"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/media/nbenatti/Progetti/DS/."/>
-					<Add directory="/media/nbenatti/Progetti/DS/google_tests/lib/googletest/include"/>
-					<Add directory="/media/nbenatti/Progetti/DS/google_tests/lib/googletest"/>
+					<Add directory="/media/aelysium/Progetti/DS/Trie_lib"/>
+					<Add directory="/media/aelysium/Progetti/DS/google_tests/lib/googletest/include"/>
+					<Add directory="/media/aelysium/Progetti/DS/google_tests/lib/googletest"/>
 					<Add directory="/usr/include/c++/9"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
 					<Add directory="/usr/include/c++/9/backward"/>
@@ -325,22 +417,22 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/media/nbenatti/Progetti/DS/cmake-build-debug/google_tests/lib/googletest/Makefile&quot;  VERBOSE=1 gtest_main/fast"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/media/nbenatti/Progetti/DS/cmake-build-debug/google_tests/lib/googletest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/media/nbenatti/Progetti/DS/cmake-build-debug/google_tests/lib/googletest/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/media/nbenatti/Progetti/DS/cmake-build-debug/google_tests/lib/googletest/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j16 -f &quot;/media/aelysium/Progetti/DS/cmake-build-debug/google_tests/lib/googletest/Makefile&quot;  VERBOSE=1 gtest_main/fast"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/media/aelysium/Progetti/DS/cmake-build-debug/google_tests/lib/googletest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/media/aelysium/Progetti/DS/cmake-build-debug/google_tests/lib/googletest/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/media/aelysium/Progetti/DS/cmake-build-debug/google_tests/lib/googletest/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="gtest">
-				<Option output="/media/nbenatti/Progetti/DS/cmake-build-debug/lib/libgtestd.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/media/nbenatti/Progetti/DS/cmake-build-debug/google_tests/lib/googletest"/>
+				<Option output="/media/aelysium/Progetti/DS/cmake-build-debug/lib/libgtestd.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/media/aelysium/Progetti/DS/cmake-build-debug/google_tests/lib/googletest"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/media/nbenatti/Progetti/DS/."/>
-					<Add directory="/media/nbenatti/Progetti/DS/google_tests/lib/googletest/include"/>
-					<Add directory="/media/nbenatti/Progetti/DS/google_tests/lib/googletest"/>
+					<Add directory="/media/aelysium/Progetti/DS/Trie_lib"/>
+					<Add directory="/media/aelysium/Progetti/DS/google_tests/lib/googletest/include"/>
+					<Add directory="/media/aelysium/Progetti/DS/google_tests/lib/googletest"/>
 					<Add directory="/usr/include/c++/9"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
 					<Add directory="/usr/include/c++/9/backward"/>
@@ -350,22 +442,22 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/media/nbenatti/Progetti/DS/cmake-build-debug/google_tests/lib/googletest/Makefile&quot;  VERBOSE=1 gtest"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/media/nbenatti/Progetti/DS/cmake-build-debug/google_tests/lib/googletest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/media/nbenatti/Progetti/DS/cmake-build-debug/google_tests/lib/googletest/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/media/nbenatti/Progetti/DS/cmake-build-debug/google_tests/lib/googletest/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j16 -f &quot;/media/aelysium/Progetti/DS/cmake-build-debug/google_tests/lib/googletest/Makefile&quot;  VERBOSE=1 gtest"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/media/aelysium/Progetti/DS/cmake-build-debug/google_tests/lib/googletest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/media/aelysium/Progetti/DS/cmake-build-debug/google_tests/lib/googletest/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/media/aelysium/Progetti/DS/cmake-build-debug/google_tests/lib/googletest/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="gtest/fast">
-				<Option output="/media/nbenatti/Progetti/DS/cmake-build-debug/lib/libgtestd.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/media/nbenatti/Progetti/DS/cmake-build-debug/google_tests/lib/googletest"/>
+				<Option output="/media/aelysium/Progetti/DS/cmake-build-debug/lib/libgtestd.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/media/aelysium/Progetti/DS/cmake-build-debug/google_tests/lib/googletest"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/media/nbenatti/Progetti/DS/."/>
-					<Add directory="/media/nbenatti/Progetti/DS/google_tests/lib/googletest/include"/>
-					<Add directory="/media/nbenatti/Progetti/DS/google_tests/lib/googletest"/>
+					<Add directory="/media/aelysium/Progetti/DS/Trie_lib"/>
+					<Add directory="/media/aelysium/Progetti/DS/google_tests/lib/googletest/include"/>
+					<Add directory="/media/aelysium/Progetti/DS/google_tests/lib/googletest"/>
 					<Add directory="/usr/include/c++/9"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
 					<Add directory="/usr/include/c++/9/backward"/>
@@ -375,74 +467,78 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/media/nbenatti/Progetti/DS/cmake-build-debug/google_tests/lib/googletest/Makefile&quot;  VERBOSE=1 gtest/fast"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/media/nbenatti/Progetti/DS/cmake-build-debug/google_tests/lib/googletest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/media/nbenatti/Progetti/DS/cmake-build-debug/google_tests/lib/googletest/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/media/nbenatti/Progetti/DS/cmake-build-debug/google_tests/lib/googletest/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j16 -f &quot;/media/aelysium/Progetti/DS/cmake-build-debug/google_tests/lib/googletest/Makefile&quot;  VERBOSE=1 gtest/fast"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/media/aelysium/Progetti/DS/cmake-build-debug/google_tests/lib/googletest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/media/aelysium/Progetti/DS/cmake-build-debug/google_tests/lib/googletest/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/media/aelysium/Progetti/DS/cmake-build-debug/google_tests/lib/googletest/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/media/nbenatti/Progetti/DS/TrieMain.cpp">
+		<Unit filename="/media/aelysium/Progetti/DS/TrieMain.cpp">
 			<Option target="DS"/>
+			<Option target="Trie_run"/>
 		</Unit>
-		<Unit filename="/media/nbenatti/Progetti/DS/Trie_lib/Trie.cpp">
-			<Option target="DS"/>
+		<Unit filename="/media/aelysium/Progetti/DS/Trie_lib/Trie.cpp">
+			<Option target="Trie_lib"/>
 		</Unit>
-		<Unit filename="/media/nbenatti/Progetti/DS/Trie_lib/Trie.h">
-			<Option target="DS"/>
+		<Unit filename="/media/aelysium/Progetti/DS/Trie_lib/Trie.h">
+			<Option target="Trie_lib"/>
 		</Unit>
-		<Unit filename="/media/nbenatti/Progetti/DS/Trie_lib/TrieNode.cpp">
-			<Option target="DS"/>
+		<Unit filename="/media/aelysium/Progetti/DS/Trie_lib/TrieNode.cpp">
+			<Option target="Trie_lib"/>
 		</Unit>
-		<Unit filename="/media/nbenatti/Progetti/DS/Trie_lib/TrieNode.h">
-			<Option target="DS"/>
+		<Unit filename="/media/aelysium/Progetti/DS/Trie_lib/TrieNode.h">
+			<Option target="Trie_lib"/>
 		</Unit>
-		<Unit filename="/media/nbenatti/Progetti/DS/google_tests/TrieTest.cpp">
+		<Unit filename="/media/aelysium/Progetti/DS/google_tests/TrieTest.cpp">
 			<Option target="google_tests_run"/>
 		</Unit>
-		<Unit filename="/media/nbenatti/Progetti/DS/google_tests/lib/googlemock/src/gmock-all.cc">
+		<Unit filename="/media/aelysium/Progetti/DS/google_tests/lib/googlemock/src/gmock-all.cc">
 			<Option target="gmock"/>
 		</Unit>
-		<Unit filename="/media/nbenatti/Progetti/DS/google_tests/lib/googlemock/src/gmock_main.cc">
+		<Unit filename="/media/aelysium/Progetti/DS/google_tests/lib/googlemock/src/gmock_main.cc">
 			<Option target="gmock_main"/>
 		</Unit>
-		<Unit filename="/media/nbenatti/Progetti/DS/google_tests/lib/googletest/src/gtest-all.cc">
+		<Unit filename="/media/aelysium/Progetti/DS/google_tests/lib/googletest/src/gtest-all.cc">
 			<Option target="gtest"/>
 		</Unit>
-		<Unit filename="/media/nbenatti/Progetti/DS/google_tests/lib/googletest/src/gtest_main.cc">
+		<Unit filename="/media/aelysium/Progetti/DS/google_tests/lib/googletest/src/gtest_main.cc">
 			<Option target="gtest_main"/>
 		</Unit>
-		<Unit filename="/media/nbenatti/Progetti/DS/CMakeLists.txt">
+		<Unit filename="/media/aelysium/Progetti/DS/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
-		<Unit filename="/media/nbenatti/Progetti/DS/google_tests/CMakeLists.txt">
+		<Unit filename="/media/aelysium/Progetti/DS/Trie_lib/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\Trie_lib\"/>
+		</Unit>
+		<Unit filename="/media/aelysium/Progetti/DS/google_tests/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\google_tests\"/>
 		</Unit>
-		<Unit filename="/media/nbenatti/Progetti/DS/google_tests/lib/CMakeLists.txt">
+		<Unit filename="/media/aelysium/Progetti/DS/google_tests/lib/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\google_tests\lib\"/>
 		</Unit>
-		<Unit filename="/media/nbenatti/Progetti/DS/google_tests/lib/googlemock/CMakeLists.txt">
+		<Unit filename="/media/aelysium/Progetti/DS/google_tests/lib/googlemock/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\google_tests\lib\googlemock\"/>
 		</Unit>
-		<Unit filename="/media/nbenatti/Progetti/DS/google_tests/lib/googlemock/cmake/gmock.pc.in">
+		<Unit filename="/media/aelysium/Progetti/DS/google_tests/lib/googlemock/cmake/gmock.pc.in">
 			<Option virtualFolder="CMake Files\google_tests\lib\googlemock\cmake\"/>
 		</Unit>
-		<Unit filename="/media/nbenatti/Progetti/DS/google_tests/lib/googlemock/cmake/gmock_main.pc.in">
+		<Unit filename="/media/aelysium/Progetti/DS/google_tests/lib/googlemock/cmake/gmock_main.pc.in">
 			<Option virtualFolder="CMake Files\google_tests\lib\googlemock\cmake\"/>
 		</Unit>
-		<Unit filename="/media/nbenatti/Progetti/DS/google_tests/lib/googletest/CMakeLists.txt">
+		<Unit filename="/media/aelysium/Progetti/DS/google_tests/lib/googletest/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\google_tests\lib\googletest\"/>
 		</Unit>
-		<Unit filename="/media/nbenatti/Progetti/DS/google_tests/lib/googletest/cmake/Config.cmake.in">
+		<Unit filename="/media/aelysium/Progetti/DS/google_tests/lib/googletest/cmake/Config.cmake.in">
 			<Option virtualFolder="CMake Files\google_tests\lib\googletest\cmake\"/>
 		</Unit>
-		<Unit filename="/media/nbenatti/Progetti/DS/google_tests/lib/googletest/cmake/gtest.pc.in">
+		<Unit filename="/media/aelysium/Progetti/DS/google_tests/lib/googletest/cmake/gtest.pc.in">
 			<Option virtualFolder="CMake Files\google_tests\lib\googletest\cmake\"/>
 		</Unit>
-		<Unit filename="/media/nbenatti/Progetti/DS/google_tests/lib/googletest/cmake/gtest_main.pc.in">
+		<Unit filename="/media/aelysium/Progetti/DS/google_tests/lib/googletest/cmake/gtest_main.pc.in">
 			<Option virtualFolder="CMake Files\google_tests\lib\googletest\cmake\"/>
 		</Unit>
-		<Unit filename="/media/nbenatti/Progetti/DS/google_tests/lib/googletest/cmake/internal_utils.cmake">
+		<Unit filename="/media/aelysium/Progetti/DS/google_tests/lib/googletest/cmake/internal_utils.cmake">
 			<Option virtualFolder="CMake Files\google_tests\lib\googletest\cmake\"/>
 		</Unit>
 	</Project>

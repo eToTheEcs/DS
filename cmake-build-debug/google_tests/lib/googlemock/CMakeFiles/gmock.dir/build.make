@@ -54,19 +54,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /snap/clion/123/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /snap/clion/129/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /snap/clion/123/bin/cmake/linux/bin/cmake -E rm -f
+RM = /snap/clion/129/bin/cmake/linux/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /media/nbenatti/Progetti/DS
+CMAKE_SOURCE_DIR = /media/aelysium/Progetti/DS
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /media/nbenatti/Progetti/DS/cmake-build-debug
+CMAKE_BINARY_DIR = /media/aelysium/Progetti/DS/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include google_tests/lib/googlemock/CMakeFiles/gmock.dir/depend.make
@@ -79,16 +79,16 @@ include google_tests/lib/googlemock/CMakeFiles/gmock.dir/flags.make
 
 google_tests/lib/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.o: google_tests/lib/googlemock/CMakeFiles/gmock.dir/flags.make
 google_tests/lib/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.o: ../google_tests/lib/googlemock/src/gmock-all.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/nbenatti/Progetti/DS/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object google_tests/lib/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.o"
-	cd /media/nbenatti/Progetti/DS/cmake-build-debug/google_tests/lib/googlemock && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gmock.dir/src/gmock-all.cc.o -c /media/nbenatti/Progetti/DS/google_tests/lib/googlemock/src/gmock-all.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/aelysium/Progetti/DS/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object google_tests/lib/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.o"
+	cd /media/aelysium/Progetti/DS/cmake-build-debug/google_tests/lib/googlemock && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gmock.dir/src/gmock-all.cc.o -c /media/aelysium/Progetti/DS/google_tests/lib/googlemock/src/gmock-all.cc
 
 google_tests/lib/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gmock.dir/src/gmock-all.cc.i"
-	cd /media/nbenatti/Progetti/DS/cmake-build-debug/google_tests/lib/googlemock && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /media/nbenatti/Progetti/DS/google_tests/lib/googlemock/src/gmock-all.cc > CMakeFiles/gmock.dir/src/gmock-all.cc.i
+	cd /media/aelysium/Progetti/DS/cmake-build-debug/google_tests/lib/googlemock && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /media/aelysium/Progetti/DS/google_tests/lib/googlemock/src/gmock-all.cc > CMakeFiles/gmock.dir/src/gmock-all.cc.i
 
 google_tests/lib/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gmock.dir/src/gmock-all.cc.s"
-	cd /media/nbenatti/Progetti/DS/cmake-build-debug/google_tests/lib/googlemock && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /media/nbenatti/Progetti/DS/google_tests/lib/googlemock/src/gmock-all.cc -o CMakeFiles/gmock.dir/src/gmock-all.cc.s
+	cd /media/aelysium/Progetti/DS/cmake-build-debug/google_tests/lib/googlemock && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /media/aelysium/Progetti/DS/google_tests/lib/googlemock/src/gmock-all.cc -o CMakeFiles/gmock.dir/src/gmock-all.cc.s
 
 # Object files for target gmock
 gmock_OBJECTS = \
@@ -100,9 +100,9 @@ gmock_EXTERNAL_OBJECTS =
 lib/libgmockd.a: google_tests/lib/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.o
 lib/libgmockd.a: google_tests/lib/googlemock/CMakeFiles/gmock.dir/build.make
 lib/libgmockd.a: google_tests/lib/googlemock/CMakeFiles/gmock.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/media/nbenatti/Progetti/DS/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library ../../../lib/libgmockd.a"
-	cd /media/nbenatti/Progetti/DS/cmake-build-debug/google_tests/lib/googlemock && $(CMAKE_COMMAND) -P CMakeFiles/gmock.dir/cmake_clean_target.cmake
-	cd /media/nbenatti/Progetti/DS/cmake-build-debug/google_tests/lib/googlemock && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/gmock.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/media/aelysium/Progetti/DS/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library ../../../lib/libgmockd.a"
+	cd /media/aelysium/Progetti/DS/cmake-build-debug/google_tests/lib/googlemock && $(CMAKE_COMMAND) -P CMakeFiles/gmock.dir/cmake_clean_target.cmake
+	cd /media/aelysium/Progetti/DS/cmake-build-debug/google_tests/lib/googlemock && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/gmock.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 google_tests/lib/googlemock/CMakeFiles/gmock.dir/build: lib/libgmockd.a
@@ -110,10 +110,10 @@ google_tests/lib/googlemock/CMakeFiles/gmock.dir/build: lib/libgmockd.a
 .PHONY : google_tests/lib/googlemock/CMakeFiles/gmock.dir/build
 
 google_tests/lib/googlemock/CMakeFiles/gmock.dir/clean:
-	cd /media/nbenatti/Progetti/DS/cmake-build-debug/google_tests/lib/googlemock && $(CMAKE_COMMAND) -P CMakeFiles/gmock.dir/cmake_clean.cmake
+	cd /media/aelysium/Progetti/DS/cmake-build-debug/google_tests/lib/googlemock && $(CMAKE_COMMAND) -P CMakeFiles/gmock.dir/cmake_clean.cmake
 .PHONY : google_tests/lib/googlemock/CMakeFiles/gmock.dir/clean
 
 google_tests/lib/googlemock/CMakeFiles/gmock.dir/depend:
-	cd /media/nbenatti/Progetti/DS/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /media/nbenatti/Progetti/DS /media/nbenatti/Progetti/DS/google_tests/lib/googlemock /media/nbenatti/Progetti/DS/cmake-build-debug /media/nbenatti/Progetti/DS/cmake-build-debug/google_tests/lib/googlemock /media/nbenatti/Progetti/DS/cmake-build-debug/google_tests/lib/googlemock/CMakeFiles/gmock.dir/DependInfo.cmake --color=$(COLOR)
+	cd /media/aelysium/Progetti/DS/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /media/aelysium/Progetti/DS /media/aelysium/Progetti/DS/google_tests/lib/googlemock /media/aelysium/Progetti/DS/cmake-build-debug /media/aelysium/Progetti/DS/cmake-build-debug/google_tests/lib/googlemock /media/aelysium/Progetti/DS/cmake-build-debug/google_tests/lib/googlemock/CMakeFiles/gmock.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : google_tests/lib/googlemock/CMakeFiles/gmock.dir/depend
 

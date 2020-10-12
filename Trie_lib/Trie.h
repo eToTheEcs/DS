@@ -10,8 +10,19 @@
 class Trie {
 
 private:
+
 	TrieNode* root;
 
+	/**
+	 * no. of keys
+	 */
+	int nkeys;
+
+	/**
+	 * performs a recursive print of the keys in the trie.
+	 * @param out stream object (to allow chaining while printing).
+	 * @param root root of the trie.
+	 */
 	void _print(std::ostream &out, TrieNode* root) const;
 
 	/**
@@ -34,19 +45,20 @@ private:
 
 public:
 	Trie();
+
 	~Trie();
 
 	/**
 	 * insert a new key in the trie
 	 * @param entry new key to insert
 	 */
-	void insert(std::string entry);
+	bool insert(std::string entry);
 
 	/**
 	 * insert a new key in the trie
 	 * @param entry new key to insert (C-style string)
 	 */
-	void insert(char entry[]);
+	bool insert(char entry[]);
 
 	/**
 	 * remove a key from the trie
@@ -60,6 +72,12 @@ public:
 	 * @return true if the key is in the trie, false otherwise
 	 */
 	bool search(std::string needle);
+
+	/**
+	 * returns the number of keys in the trie.
+	 * @return number of keys
+	 */
+	int size();
 
 	/**
 	 * search for all the keys having a certain prefix

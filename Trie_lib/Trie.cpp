@@ -2,7 +2,7 @@
 #include <iostream>
 #include <stack>
 
-Trie::Trie() {
+Trie::Trie() : nkeys(0) {
 	this->root = new TrieNode(false);
 }
 
@@ -21,7 +21,7 @@ void Trie::_print(std::ostream &out, TrieNode *root) const {
     }
 }
 
-void Trie::insert(std::string entry) {
+bool Trie::insert(std::string entry) {
 	TrieNode *runner, *nextHop;
 	int len;
 
@@ -31,21 +31,28 @@ void Trie::insert(std::string entry) {
         nextHop = runner->getChild(entry[i]);
         // if the symbol is present, just continue traversing
         if (nextHop) {
-			// if the last letter is not a leaf, just mark it as an end-of-word
-			/*if (i == len && !nextHop->isEndOfWord())
-				nextHop->setEndOfWord(true);*/
 			runner = nextHop;
 		} else {	// create a new path in the tree
 			runner = runner->addChild(entry[i], false);
 		}
 	}
 
-    // mark the last letter as an end-of-word node
-    runner->setEndOfWord(true);
+    // mark the last letter as an end-of-word node (if wasn't previously set)
+    if(!runner->isEndOfWord()) {
+        runner->setEndOfWord(true);
+
+        // update number-of-keys indicator
+        this->nkeys++;
+
+        return true;
+    }
+
+    // duplicate insertion
+    return false;
 }
 
-void Trie::insert(char entry[]) {
-	this->insert(std::string(entry));
+bool Trie::insert(char entry[]) {
+	return this->insert(std::string(entry));
 }
 
 void Trie::remove(std::string entry) {
@@ -60,13 +67,14 @@ std::set<std::string> Trie::prefixSearch(std::string prefix) {
     TrieNode *endOfPrefixNode = this->_search(prefix, true);
     std::set<std::string> keySet;
 
-    /*if(endOfPrefixNode != nullptr) {
-        std::cout<< endOfPrefixNode->numChildren() << "\n";
-    } else
-        std::cout<<"key not found\n";
-    */
-
     if(endOfPrefixNode != nullptr) {
+        /*
+         * prefix is an existing key
+         * (still requires prefix extraction because there may be another key which has this one as a prefix)
+         */
+        if(endOfPrefixNode->isEndOfWord())
+            keySet.insert(prefix);
+
         keySet = this->extractPrefixes(prefix, endOfPrefixNode);
     }
 
@@ -99,7 +107,6 @@ TrieNode *Trie::_search(std::string needle, bool prefixMode) {
 
 std::set<std::string> Trie::extractPrefixes(std::string needle, const TrieNode *node) const {
     std::set<std::string> res;
-
     std::map<char, TrieNode*> children = node->getChildren();
 
     for(auto it = children.begin(); it != children.end(); it++) {
@@ -115,14 +122,12 @@ std::set<std::string> Trie::extractPrefixes(std::string needle, const TrieNode *
             sck.pop();
 
             // insert full key into result list
-            if(state.first->isEndOfWord()) {
+            if(state.first->isEndOfWord())
                 res.insert(state.second);
-            }
 
-            std::map<char, TrieNode *> children = state.first->getChildren();
-            for (auto it = children.begin(); it != children.end(); it++) {
+            std::map<char, TrieNode*> children = state.first->getChildren();
+            for (auto it = children.begin(); it != children.end(); it++)
                 sck.push({it->second, state.second + it->first});
-            }
         }
     }
 
@@ -132,6 +137,9 @@ std::set<std::string> Trie::extractPrefixes(std::string needle, const TrieNode *
 
 std::ostream &operator<<(std::ostream &os, const Trie &trie) {
     trie._print(os, trie.root);
-
     return os;
+}
+
+int Trie::size() {
+    return this->nkeys;
 }

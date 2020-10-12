@@ -54,19 +54,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /snap/clion/123/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /snap/clion/129/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /snap/clion/123/bin/cmake/linux/bin/cmake -E rm -f
+RM = /snap/clion/129/bin/cmake/linux/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /media/nbenatti/Progetti/DS
+CMAKE_SOURCE_DIR = /media/aelysium/Progetti/DS
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /media/nbenatti/Progetti/DS/cmake-build-debug
+CMAKE_BINARY_DIR = /media/aelysium/Progetti/DS/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/DS.dir/depend.make
@@ -77,60 +77,30 @@ include CMakeFiles/DS.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/DS.dir/flags.make
 
-CMakeFiles/DS.dir/Trie_lib/Trie.cpp.o: CMakeFiles/DS.dir/flags.make
-CMakeFiles/DS.dir/Trie_lib/Trie.cpp.o: ../Trie_lib/Trie.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/nbenatti/Progetti/DS/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/DS.dir/Trie_lib/Trie.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DS.dir/Trie_lib/Trie.cpp.o -c /media/nbenatti/Progetti/DS/Trie_lib/Trie.cpp
-
-CMakeFiles/DS.dir/Trie_lib/Trie.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DS.dir/Trie_lib/Trie.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /media/nbenatti/Progetti/DS/Trie_lib/Trie.cpp > CMakeFiles/DS.dir/Trie_lib/Trie.cpp.i
-
-CMakeFiles/DS.dir/Trie_lib/Trie.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DS.dir/Trie_lib/Trie.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /media/nbenatti/Progetti/DS/Trie_lib/Trie.cpp -o CMakeFiles/DS.dir/Trie_lib/Trie.cpp.s
-
 CMakeFiles/DS.dir/TrieMain.cpp.o: CMakeFiles/DS.dir/flags.make
 CMakeFiles/DS.dir/TrieMain.cpp.o: ../TrieMain.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/nbenatti/Progetti/DS/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/DS.dir/TrieMain.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DS.dir/TrieMain.cpp.o -c /media/nbenatti/Progetti/DS/TrieMain.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/aelysium/Progetti/DS/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/DS.dir/TrieMain.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DS.dir/TrieMain.cpp.o -c /media/aelysium/Progetti/DS/TrieMain.cpp
 
 CMakeFiles/DS.dir/TrieMain.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DS.dir/TrieMain.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /media/nbenatti/Progetti/DS/TrieMain.cpp > CMakeFiles/DS.dir/TrieMain.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /media/aelysium/Progetti/DS/TrieMain.cpp > CMakeFiles/DS.dir/TrieMain.cpp.i
 
 CMakeFiles/DS.dir/TrieMain.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DS.dir/TrieMain.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /media/nbenatti/Progetti/DS/TrieMain.cpp -o CMakeFiles/DS.dir/TrieMain.cpp.s
-
-CMakeFiles/DS.dir/Trie_lib/TrieNode.cpp.o: CMakeFiles/DS.dir/flags.make
-CMakeFiles/DS.dir/Trie_lib/TrieNode.cpp.o: ../Trie_lib/TrieNode.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/nbenatti/Progetti/DS/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/DS.dir/Trie_lib/TrieNode.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DS.dir/Trie_lib/TrieNode.cpp.o -c /media/nbenatti/Progetti/DS/Trie_lib/TrieNode.cpp
-
-CMakeFiles/DS.dir/Trie_lib/TrieNode.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DS.dir/Trie_lib/TrieNode.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /media/nbenatti/Progetti/DS/Trie_lib/TrieNode.cpp > CMakeFiles/DS.dir/Trie_lib/TrieNode.cpp.i
-
-CMakeFiles/DS.dir/Trie_lib/TrieNode.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DS.dir/Trie_lib/TrieNode.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /media/nbenatti/Progetti/DS/Trie_lib/TrieNode.cpp -o CMakeFiles/DS.dir/Trie_lib/TrieNode.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /media/aelysium/Progetti/DS/TrieMain.cpp -o CMakeFiles/DS.dir/TrieMain.cpp.s
 
 # Object files for target DS
 DS_OBJECTS = \
-"CMakeFiles/DS.dir/Trie_lib/Trie.cpp.o" \
-"CMakeFiles/DS.dir/TrieMain.cpp.o" \
-"CMakeFiles/DS.dir/Trie_lib/TrieNode.cpp.o"
+"CMakeFiles/DS.dir/TrieMain.cpp.o"
 
 # External object files for target DS
 DS_EXTERNAL_OBJECTS =
 
-DS: CMakeFiles/DS.dir/Trie_lib/Trie.cpp.o
 DS: CMakeFiles/DS.dir/TrieMain.cpp.o
-DS: CMakeFiles/DS.dir/Trie_lib/TrieNode.cpp.o
 DS: CMakeFiles/DS.dir/build.make
 DS: CMakeFiles/DS.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/media/nbenatti/Progetti/DS/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable DS"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/media/aelysium/Progetti/DS/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable DS"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/DS.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -143,6 +113,6 @@ CMakeFiles/DS.dir/clean:
 .PHONY : CMakeFiles/DS.dir/clean
 
 CMakeFiles/DS.dir/depend:
-	cd /media/nbenatti/Progetti/DS/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /media/nbenatti/Progetti/DS /media/nbenatti/Progetti/DS /media/nbenatti/Progetti/DS/cmake-build-debug /media/nbenatti/Progetti/DS/cmake-build-debug /media/nbenatti/Progetti/DS/cmake-build-debug/CMakeFiles/DS.dir/DependInfo.cmake --color=$(COLOR)
+	cd /media/aelysium/Progetti/DS/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /media/aelysium/Progetti/DS /media/aelysium/Progetti/DS /media/aelysium/Progetti/DS/cmake-build-debug /media/aelysium/Progetti/DS/cmake-build-debug /media/aelysium/Progetti/DS/cmake-build-debug/CMakeFiles/DS.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/DS.dir/depend
 

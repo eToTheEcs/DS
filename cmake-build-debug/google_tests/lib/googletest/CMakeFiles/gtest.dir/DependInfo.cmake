@@ -4,13 +4,13 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/media/nbenatti/Progetti/DS/google_tests/lib/googletest/src/gtest-all.cc" "/media/nbenatti/Progetti/DS/cmake-build-debug/google_tests/lib/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o"
+  "/media/aelysium/Progetti/DS/google_tests/lib/googletest/src/gtest-all.cc" "/media/aelysium/Progetti/DS/cmake-build-debug/google_tests/lib/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "../."
+  "../Trie_lib"
   "../google_tests/lib/googletest/include"
   "../google_tests/lib/googletest"
   )
