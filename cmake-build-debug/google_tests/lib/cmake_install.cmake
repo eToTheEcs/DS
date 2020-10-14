@@ -1,4 +1,4 @@
-# Install script for directory: /media/aelysium/Progetti/DS/google_tests/lib
+# Install script for directory: /home/aelysium/CLionProjects/suggest/google_tests/lib
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,7 +39,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/media/aelysium/Progetti/DS/cmake-build-debug/google_tests/lib/googlemock/cmake_install.cmake")
+  include("/home/aelysium/CLionProjects/suggest/cmake-build-debug/google_tests/lib/googlemock/cmake_install.cmake")
 
 endif()
 

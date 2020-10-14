@@ -6,5 +6,5 @@ CXX_FLAGS = -g   -Wall -Wshadow -Werror -Wno-error=dangling-else -DGTEST_HAS_PTH
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/media/aelysium/Progetti/DS/Trie_lib -I/media/aelysium/Progetti/DS/google_tests/lib/googletest/include -I/media/aelysium/Progetti/DS/google_tests/lib/googletest 
+CXX_INCLUDES = -I/home/aelysium/CLionProjects/suggest/Trie_lib -I/home/aelysium/CLionProjects/suggest/google_tests/lib/googletest/include -I/home/aelysium/CLionProjects/suggest/google_tests/lib/googletest 
 

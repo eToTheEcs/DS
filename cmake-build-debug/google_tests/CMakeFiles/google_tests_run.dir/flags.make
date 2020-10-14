@@ -6,5 +6,5 @@ CXX_FLAGS = -g   -std=gnu++14
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/media/aelysium/Progetti/DS/Trie_lib -isystem /media/aelysium/Progetti/DS/google_tests/lib/googletest/include -isystem /media/aelysium/Progetti/DS/google_tests/lib/googletest 
+CXX_INCLUDES = -I/home/aelysium/CLionProjects/suggest/Trie_lib -isystem /home/aelysium/CLionProjects/suggest/google_tests/lib/googletest/include -isystem /home/aelysium/CLionProjects/suggest/google_tests/lib/googletest 
 

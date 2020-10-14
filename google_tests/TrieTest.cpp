@@ -19,16 +19,16 @@ protected:
 
 	void SetUp() override {
         // populate the trie
-        testData = {"peter", "pedantic", "paddle", "pandemic", "pad"};
+        testData = {"peter", "pedantic", "pedantico", "paddle", "pandemic", "pad"};
         for(std::string el : testData)
             t1.insert(el);
 
         //TODO: add testcase file
         expectedAutocompletionResults["pa"] = std::set<std::string>({"paddle", "pandemic", "pad"});
         expectedAutocompletionResults["pad"] = std::set<std::string>({"paddle", "pad"});
-        expectedAutocompletionResults["pe"] = std::set<std::string>({"pedantic", "peter"});
+        expectedAutocompletionResults["pe"] = std::set<std::string>({"pedantic", "pedantico", "peter"});
         expectedAutocompletionResults["ciao"] = std::set<std::string>();
-        expectedAutocompletionResults["paddle"] = std::set<std::string>({"paddle"});
+        expectedAutocompletionResults["pedantic"] = std::set<std::string>({"pedantic", "pedantico"});
         expectedAutocompletionResults["b"] = std::set<std::string>();
         expectedAutocompletionResults[""] = std::set<std::string>();
     }

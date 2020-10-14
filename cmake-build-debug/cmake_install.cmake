@@ -1,4 +1,4 @@
-# Install script for directory: /media/aelysium/Progetti/DS
+# Install script for directory: /home/aelysium/CLionProjects/suggest
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,12 +39,12 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/media/aelysium/Progetti/DS/cmake-build-debug/Trie_lib/cmake_install.cmake")
+  include("/home/aelysium/CLionProjects/suggest/cmake-build-debug/Trie_lib/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/media/aelysium/Progetti/DS/cmake-build-debug/google_tests/cmake_install.cmake")
+  include("/home/aelysium/CLionProjects/suggest/cmake-build-debug/google_tests/cmake_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -55,5 +55,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/media/aelysium/Progetti/DS/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/aelysium/CLionProjects/suggest/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

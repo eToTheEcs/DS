@@ -75,7 +75,8 @@ std::set<std::string> Trie::prefixSearch(std::string prefix) {
         if(endOfPrefixNode->isEndOfWord())
             keySet.insert(prefix);
 
-        keySet = this->extractPrefixes(prefix, endOfPrefixNode);
+        std::set<std::string> dummy = this->extractPrefixes(prefix, endOfPrefixNode);
+        keySet.insert(dummy.begin(), dummy.end());
     }
 
     return keySet;
