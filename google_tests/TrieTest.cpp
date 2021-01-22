@@ -40,7 +40,7 @@ protected:
 
 TEST_F(TrieTestFixture, sizeDoesWork) {
     EXPECT_EQ(t0.size(), 0);
-    EXPECT_EQ(t1.size(), 5);
+    EXPECT_EQ(t1.size(), 6);
 }
 
 TEST_F(TrieTestFixture, duplicateCheck) {
