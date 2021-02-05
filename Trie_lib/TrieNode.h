@@ -12,16 +12,18 @@ private:
 public:
     TrieNode();
 	TrieNode(bool eow);
+    TrieNode(const TrieNode& toCopy);
 	~TrieNode();
 	
 	//char getValue();
-	bool isEndOfWord();
+	bool isEndOfWord() const;
 	void setEndOfWord(bool eow);
 	int numChildren();
 	TrieNode* getChild(char symbol);
 	TrieNode* addChild(char symbol, bool isEOW);
+	void removeChild(char symbol);
 	const std::map<char, TrieNode*>& getChildren() const;
 
-	friend std::ostream& operator<<(std::ostream &out, const TrieNode &node);
+	friend std::ostream& operator<<(std::ostream& out, const TrieNode& node);
 };
 

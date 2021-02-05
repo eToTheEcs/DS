@@ -1,0 +1,6 @@
+pad 1
+pa 0
+casaccio 0
+catenariao 0
+catena 1
+ebbene 0

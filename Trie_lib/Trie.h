@@ -14,34 +14,36 @@ private:
 	TrieNode* root;
 
 	/**
-	 * no. of keys
+	 * Number of keys
 	 */
 	int nkeys;
 
 	/**
-	 * performs a recursive print of the keys in the trie.
+	 * Performs a recursive print of the keys in the trie.
 	 * @param out stream object (to allow chaining while printing).
 	 * @param root root of the trie.
 	 */
 	void _print(std::ostream &out, TrieNode* root) const;
 
 	/**
-	 * performs the search algorithm.
+	 * Performs the search algorithm.
 	 * @param needle key to search for.
-	 * @param prefixMode if it's true, the algorithm will look for presence of complete keys
+	 * @param prefixMode if it's true, the algorithm will look for presence of full words <br>
 	 *                   if it's false, the algorithm will perform a prefix search, hence returning true
-	 *                   also in the case a prefix is present, without the full key.
+	 *                   in the case a prefix is present, even if it's not a full word.
 	 * @return node of the last match.
 	 */
-	TrieNode* _search(std::string needle, bool prefixMode);
+	TrieNode* _search(const std::string& needle, bool prefixMode);
+
+	bool _delete(const std::string& key, int needleIndex, TrieNode* root);
 
 	/**
-	 * extracts the full list of automopletions.
+	 * Extracts the full list of autocompletions.
 	 * @param needle searched keyword
 	 * @param node pointer to the last letter of the keyword
 	 * @return ordered list of autocompletions
 	 */
-	std::set<std::string> extractPrefixes(std::string needle, const TrieNode *node) const;
+	std::set<std::string> extractPrefixes(const std::string& needle, const TrieNode* node) const;
 
 public:
 	Trie();
@@ -49,49 +51,50 @@ public:
 	~Trie();
 
 	/**
-	 * insert a new key in the trie
-	 * @param entry new key to insert
+	 * Inserts a new key in the trie
+	 * @param key new key to insert
 	 */
-	bool insert(std::string entry);
+	bool insert(const std::string& key);
 
 	/**
-	 * insert a new key in the trie
-	 * @param entry new key to insert (C-style string)
+	 * Inserts a new key in the trie
+	 * @param key new key to insert (C-style string)
 	 */
-	bool insert(char entry[]);
+	bool insert(char key[]);
 
 	/**
-	 * remove a key from the trie
-	 * @param entry key to remove
+	 * Deletes a key from the trie, if it's present,
+	 * while does nothing if the key is absent.
+	 * @param key key to remove
 	 */
-	void remove(std::string entry);
+	void remove(std::string key);
 
 	/**
-	 * search for a string in the trie
+	 * Searches for a string in the trie
 	 * @param needle key to search for
 	 * @return true if the key is in the trie, false otherwise
 	 */
-	bool search(std::string needle);
+	bool search(const std::string& needle);
 
 	/**
-	 * returns the number of keys in the trie.
+	 * Returns the number of keys in the trie.
 	 * @return number of keys
 	 */
-	int size();
+	int size() const;
 
 	/**
-	 * search for all the keys having a certain prefix
+	 * Searches for all the keys having a certain prefix
 	 * @param prefix the prefix to search for
 	 * @return set of keys that have the same prefix, empty sey if no matches found.
 	 */
-	std::set<std::string> prefixSearch(std::string prefix);
+	std::set<std::string> prefixSearch(const std::string& prefix);
 
 	/**
-	 * standard operator overloading
+	 * Standard operator overloading
 	 * @param os stream object
 	 * @param trie trie object to print out
 	 * @return the stream object (to allow chaining of << operators)
 	 */
-    friend std::ostream& operator<<(std::ostream &os, const Trie &trie);
+    friend std::ostream& operator<<(std::ostream& os, const Trie& trie);
 };
 

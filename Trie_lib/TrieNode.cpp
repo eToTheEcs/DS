@@ -5,7 +5,7 @@ TrieNode::TrieNode() : endOfWord(false), children() {}
 
 TrieNode::TrieNode(bool eow) : endOfWord(eow), children() {}
 
-bool TrieNode::isEndOfWord() {
+bool TrieNode::isEndOfWord() const {
 
     return this->endOfWord;
 }
@@ -17,7 +17,7 @@ void TrieNode::setEndOfWord(bool eow) {
 
 TrieNode* TrieNode::getChild(char symbol) {
 	
-	std::map<char, TrieNode*>::iterator it  = this->children.find(symbol);
+	auto it  = this->children.find(symbol);
 	TrieNode* res;
 
 	if (it != this->children.end()) {
@@ -57,7 +57,7 @@ int TrieNode::numChildren() {
     return this->children.size();
 }
 
-std::ostream &operator<<(std::ostream &out, const TrieNode &node) {
+std::ostream &operator<<(std::ostream& out, const TrieNode& node) {
 
     out<< "EOW: " << node.endOfWord << std::endl;
     out<< "NODE HAS " << node.children.size() << " CHILDREN" << std::endl;
@@ -70,4 +70,13 @@ std::ostream &operator<<(std::ostream &out, const TrieNode &node) {
     out<< it->first << " } "<< std::endl;
 
     return out;
+}
+
+TrieNode::TrieNode(const TrieNode& toCopy) {
+    this->endOfWord = toCopy.endOfWord;
+    this->children = toCopy.children;
+}
+
+void TrieNode::removeChild(char symbol) {
+	this->children.erase(symbol);
 }

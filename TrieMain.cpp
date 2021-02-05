@@ -10,6 +10,7 @@ int main(int argc, char *argv[]) {
 	trie.insert("peter");
 	trie.insert("pedantic");
 	trie.insert("paddle");
+	trie.insert("pad");
 	trie.insert("pandemic");
 
 	cout<< trie <<endl;
@@ -29,6 +30,10 @@ int main(int argc, char *argv[]) {
         for (auto it = results.begin(); it != results.end(); it++)
             cout << *it << "\n";
     }
+
+	trie.remove("paddle");
+
+	cout<<"REMOVAL\n" << trie <<endl;
 
 	return 0;
 }
