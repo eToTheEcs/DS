@@ -2,8 +2,25 @@
 #include <iostream>
 #include <stack>
 
-Trie::Trie() : nkeys(0) {
+Trie::Trie() : numberOfKeys(0) {
 	this->root = new TrieNode(false);
+}
+
+void Trie::clone(TrieNode* root, const TrieNode* toClone) {
+    if(toClone != nullptr) {
+        root = new TrieNode(*toClone);
+
+        auto children = root->getChildren();
+        auto toCloneChildren = toClone->getChildren();
+
+        for(auto it = children.begin(), jt = toCloneChildren.begin(); it != children.end(); ++it, ++jt) {
+            this->clone(it->second, jt->second);
+        }
+    }
+}
+
+Trie::Trie(const Trie& toCopy) {
+    this->clone(this->root, toCopy.root);
 }
 
 Trie::~Trie() {
@@ -40,7 +57,7 @@ bool Trie::insert(const std::string& key) {
     if(!runner->isEndOfWord()) {
         runner->setEndOfWord(true);
         // update number-of-keys indicator
-        this->nkeys++;
+        this->numberOfKeys++;
 
         return true;
     }
@@ -53,41 +70,41 @@ bool Trie::insert(char key[]) {
 	return this->insert(std::string(key));
 }
 
-bool Trie::_delete(const std::string& key, int depth, TrieNode* root) {
-    bool esit;
+TrieNode* Trie::_delete(const std::string& key, int needleIndex, TrieNode* root) {
+    TrieNode* esit;
     TrieNode* next;
 
     if(root == nullptr) {
-        return false;
+        return nullptr;
     }
 
-    if(depth == key.size()) {
+    if(needleIndex == key.size()) {
         if(root->isEndOfWord()) {
-            this->nkeys--;
-            next = root->getChild(key[depth - 1]);
+            this->numberOfKeys--;
+            next = root->getChild(key[needleIndex - 1]);
             if (next != nullptr) {
                 root->setEndOfWord(false);
-                return false;
+                return root;
             } else { // the key is not a prefix of another key
                 delete root;
-                return true;
+                return nullptr;
             }
         }
     }
 
-    esit = _delete(key, depth + 1, root->getChild(key[depth]));
-    if(esit) {
+    esit = _delete(key, needleIndex + 1, root->getChild(key[needleIndex]));
+
+    if(esit == nullptr) {
         // the child node has been deleted, remove it from the list of children
-        root->removeChild(key[depth]);
-        if(depth > 0 && !root->isEndOfWord() && root->numChildren() == 0) {
+        root->removeChild(key[needleIndex]);
+        if(needleIndex > 0 && !root->isEndOfWord() && root->numChildren() == 0) {
             delete root;
-            return true;
-        }
-        else
-            return false;
+            return nullptr;
+        } else
+            return root;
     }
 
-    return false;
+    return root;
 }
 
 void Trie::remove(std::string key) {
@@ -140,7 +157,6 @@ TrieNode* Trie::_search(const std::string& needle, bool prefixMode) {
     return nextHop;
 }
 
-
 std::set<std::string> Trie::extractPrefixes(const std::string& needle, const TrieNode* node) const {
     std::set<std::string> res;
     std::map<char, TrieNode*> children = node->getChildren();
@@ -176,5 +192,5 @@ std::ostream& operator<<(std::ostream& os, const Trie& trie) {
 }
 
 int Trie::size() const {
-    return this->nkeys;
+    return this->numberOfKeys;
 }

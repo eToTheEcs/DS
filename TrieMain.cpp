@@ -24,16 +24,18 @@ int main(int argc, char *argv[]) {
 
 	set<string> results = trie.prefixSearch("p");
 
-	if(!results.size()) {
+	if(results.empty()) {
 	    cout<< "NO RESULTS FOUND\n";
 	} else {
-        for (auto it = results.begin(); it != results.end(); it++)
-            cout << *it << "\n";
+        for (const auto& result : results)
+            cout << result << "\n";
     }
 
 	trie.remove("paddle");
 
 	cout<<"REMOVAL\n" << trie <<endl;
+
+	Trie cloned = trie;
 
 	return 0;
 }

@@ -86,7 +86,6 @@ TEST_F(TrieTestFixture, searchCheck) {
     }
 }
 
-
 TEST_F(TrieTestFixture, clonedSizeCheck) {
     EXPECT_EQ(t1.size(), cloned.size());
 }
@@ -99,7 +98,7 @@ TEST_F(TrieTestFixture, clonedAutocompleteCheck) {
     }
 }
 
-TEST_F(TrieTestFixture, removalCheck) {
+TEST_F(TrieTestFixture, deletionCheck) {
     t1.remove("pa");
     ASSERT_EQ(t1.size(), 9);
     std::cout<< t1 <<std::endl;

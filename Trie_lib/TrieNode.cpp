@@ -5,6 +5,11 @@ TrieNode::TrieNode() : endOfWord(false), children() {}
 
 TrieNode::TrieNode(bool eow) : endOfWord(eow), children() {}
 
+TrieNode::TrieNode(const TrieNode& toCopy) {
+    this->endOfWord = toCopy.endOfWord;
+    this->children = toCopy.children;
+}
+
 bool TrieNode::isEndOfWord() const {
 
     return this->endOfWord;
@@ -16,7 +21,7 @@ void TrieNode::setEndOfWord(bool eow) {
 }
 
 TrieNode* TrieNode::getChild(char symbol) {
-	
+
 	auto it  = this->children.find(symbol);
 	TrieNode* res;
 
@@ -37,27 +42,26 @@ TrieNode* TrieNode::addChild(char symbol, bool isEOW) {
 	    // get the newly-inserted node from directly from the return value
 		TrieNode* res = this->children.insert({symbol, new TrieNode(isEOW)}).first->second;
 		return res;
-	} else
-	    std::cout<< "child already present";
+	}
 
 	return nullptr;
 }
 
+
 const std::map<char, TrieNode*>& TrieNode::getChildren() const {
-	
+
 	return this->children;
 }
 
-
 TrieNode::~TrieNode() {
-	
+
 }
 
 int TrieNode::numChildren() {
     return this->children.size();
 }
 
-std::ostream &operator<<(std::ostream& out, const TrieNode& node) {
+std::ostream& operator<<(std::ostream& out, const TrieNode& node) {
 
     out<< "EOW: " << node.endOfWord << std::endl;
     out<< "NODE HAS " << node.children.size() << " CHILDREN" << std::endl;
@@ -72,11 +76,10 @@ std::ostream &operator<<(std::ostream& out, const TrieNode& node) {
     return out;
 }
 
-TrieNode::TrieNode(const TrieNode& toCopy) {
-    this->endOfWord = toCopy.endOfWord;
-    this->children = toCopy.children;
-}
-
 void TrieNode::removeChild(char symbol) {
 	this->children.erase(symbol);
+}
+
+void TrieNode::setChildren(const std::map<char, TrieNode*> childrenList) {
+    this->children = childrenList;  // copy ctor gets called
 }

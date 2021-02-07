@@ -13,10 +13,7 @@ private:
 
 	TrieNode* root;
 
-	/**
-	 * Number of keys
-	 */
-	int nkeys;
+	int numberOfKeys;
 
 	/**
 	 * Performs a recursive print of the keys in the trie.
@@ -35,7 +32,16 @@ private:
 	 */
 	TrieNode* _search(const std::string& needle, bool prefixMode);
 
-	bool _delete(const std::string& key, int needleIndex, TrieNode* root);
+	/**
+	 * Performs recursive deletion algorithm (if the key is present).
+	 * @param key the key to remove
+	 * @param needleIndex key character f
+	 * @param root trie root node
+	 * @return root of the modified trie
+	 */
+	TrieNode* _delete(const std::string& key, int needleIndex, TrieNode* root);
+
+	void clone(TrieNode* root, const TrieNode* toClone);
 
 	/**
 	 * Extracts the full list of autocompletions.
@@ -47,6 +53,8 @@ private:
 
 public:
 	Trie();
+
+	Trie(const Trie& toCopy);
 
 	~Trie();
 
@@ -85,16 +93,10 @@ public:
 	/**
 	 * Searches for all the keys having a certain prefix
 	 * @param prefix the prefix to search for
-	 * @return set of keys that have the same prefix, empty sey if no matches found.
+	 * @return set of keys that have the same prefix, empty sey if no matches are found.
 	 */
 	std::set<std::string> prefixSearch(const std::string& prefix);
 
-	/**
-	 * Standard operator overloading
-	 * @param os stream object
-	 * @param trie trie object to print out
-	 * @return the stream object (to allow chaining of << operators)
-	 */
     friend std::ostream& operator<<(std::ostream& os, const Trie& trie);
 };
 
