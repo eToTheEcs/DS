@@ -19,7 +19,7 @@ void Trie::clone(TrieNode* root, const TrieNode* toClone) {
     }
 }
 
-Trie::Trie(const Trie& toCopy) {
+Trie::Trie(const Trie& toCopy) : numberOfKeys(toCopy.numberOfKeys) {
     this->clone(this->root, toCopy.root);
 }
 
@@ -70,7 +70,7 @@ bool Trie::insert(char key[]) {
 	return this->insert(std::string(key));
 }
 
-TrieNode* Trie::_delete(const std::string& key, int needleIndex, TrieNode* root) {
+TrieNode* Trie::_delete(const std::string& key, int keyIndex, TrieNode* root) {
     TrieNode* esit;
     TrieNode* next;
 
@@ -78,10 +78,10 @@ TrieNode* Trie::_delete(const std::string& key, int needleIndex, TrieNode* root)
         return nullptr;
     }
 
-    if(needleIndex == key.size()) {
+    if(keyIndex == key.size()) {
         if(root->isEndOfWord()) {
             this->numberOfKeys--;
-            next = root->getChild(key[needleIndex - 1]);
+            next = root->getChild(key[keyIndex - 1]);
             if (next != nullptr) {
                 root->setEndOfWord(false);
                 return root;
@@ -92,12 +92,12 @@ TrieNode* Trie::_delete(const std::string& key, int needleIndex, TrieNode* root)
         }
     }
 
-    esit = _delete(key, needleIndex + 1, root->getChild(key[needleIndex]));
+    esit = _delete(key, keyIndex + 1, root->getChild(key[keyIndex]));
 
     if(esit == nullptr) {
         // the child node has been deleted, remove it from the list of children
-        root->removeChild(key[needleIndex]);
-        if(needleIndex > 0 && !root->isEndOfWord() && root->numChildren() == 0) {
+        root->removeChild(key[keyIndex]);
+        if(keyIndex > 0 && !root->isEndOfWord() && root->numChildren() == 0) {
             delete root;
             return nullptr;
         } else
@@ -112,11 +112,13 @@ void Trie::remove(std::string key) {
 }
 
 bool Trie::search(const std::string& needle) {
-    return this->_search(needle, false) != nullptr;
+    TrieNode* lastMatch = this->_search(needle);
+
+    return lastMatch != nullptr && lastMatch->isEndOfWord();
 }
 
 std::set<std::string> Trie::prefixSearch(const std::string& prefix) {
-    TrieNode* endOfPrefix = this->_search(prefix, true);
+    TrieNode* endOfPrefix = this->_search(prefix);
     std::set<std::string> keySet;
 
     if(endOfPrefix != nullptr) {
@@ -134,7 +136,7 @@ std::set<std::string> Trie::prefixSearch(const std::string& prefix) {
     return keySet;
 }
 
-TrieNode* Trie::_search(const std::string& needle, bool prefixMode) {
+TrieNode * Trie::_search(const std::string &needle) {
     int i, len;
     TrieNode* runner;
     TrieNode* nextHop = nullptr;
@@ -151,8 +153,8 @@ TrieNode* Trie::_search(const std::string& needle, bool prefixMode) {
     }
 
     // handle the last letter
-    if(!prefixMode && (nextHop == nullptr || !nextHop->isEndOfWord()))
-        return nullptr;
+    /*if(!prefixMode && (nextHop == nullptr || !nextHop->isEndOfWord()))
+        return nullptr;*/
 
     return nextHop;
 }
@@ -166,20 +168,20 @@ std::set<std::string> Trie::extractPrefixes(const std::string& needle, const Tri
         TrieNode* root = const_cast<TrieNode *>(node);
         std::pair<TrieNode*, std::string>state;
 
-        // perform a dfs in the portion of trie
-        std::stack<std::pair<TrieNode*, std::string>> sck;
-        sck.push({root, needle});
-        while(!sck.empty()) {
-            state = sck.top();
-            sck.pop();
+        // perform a DFS in the portion of trie
+        std::stack<std::pair<TrieNode*, std::string>> stk;
+        stk.push({root, needle});
+        while(!stk.empty()) {
+            state = stk.top();
+            stk.pop();
 
             // insert full key into result list
             if(state.first->isEndOfWord())
                 res.insert(state.second);
 
             std::map<char, TrieNode*> children = state.first->getChildren();
-            for (auto & it : children)
-                sck.push({it.second, state.second + it.first});
+            for (auto & child : children)
+                stk.push({child.second, state.second + child.first});
         }
     }
 

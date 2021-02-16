@@ -15,39 +15,31 @@ private:
 
 	int numberOfKeys;
 
-	/**
+	/*
 	 * Performs a recursive print of the keys in the trie.
-	 * @param out stream object (to allow chaining while printing).
-	 * @param root root of the trie.
 	 */
 	void _print(std::ostream &out, TrieNode* root) const;
 
-	/**
+	/*
 	 * Performs the search algorithm.
-	 * @param needle key to search for.
-	 * @param prefixMode if it's true, the algorithm will look for presence of full words <br>
-	 *                   if it's false, the algorithm will perform a prefix search, hence returning true
-	 *                   in the case a prefix is present, even if it's not a full word.
-	 * @return node of the last match.
+	 * Returns the last-match-node if the key is present, null otherwise
 	 */
-	TrieNode* _search(const std::string& needle, bool prefixMode);
+    TrieNode *_search(const std::string &needle);
 
-	/**
+	/*
 	 * Performs recursive deletion algorithm (if the key is present).
-	 * @param key the key to remove
-	 * @param needleIndex key character f
-	 * @param root trie root node
-	 * @return root of the modified trie
+	 * Returns the root of the modified trie.
 	 */
-	TrieNode* _delete(const std::string& key, int needleIndex, TrieNode* root);
+	TrieNode* _delete(const std::string& key, int keyIndex, TrieNode* root);
 
+	/*
+	 * Clones an existing trie into a new one, from it's roots
+	 */
 	void clone(TrieNode* root, const TrieNode* toClone);
 
-	/**
-	 * Extracts the full list of autocompletions.
-	 * @param needle searched keyword
-	 * @param node pointer to the last letter of the keyword
-	 * @return ordered list of autocompletions
+	/*
+	 * Extracts the full autocompletion list.
+	 * Takes the key and the pointer to it's last letter in the trie
 	 */
 	std::set<std::string> extractPrefixes(const std::string& needle, const TrieNode* node) const;
 
@@ -79,7 +71,7 @@ public:
 
 	/**
 	 * Searches for a string in the trie
-	 * @param needle key to search for
+	 * @param key to search for
 	 * @return true if the key is in the trie, false otherwise
 	 */
 	bool search(const std::string& needle);
