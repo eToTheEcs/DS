@@ -1,7 +1,6 @@
 project(Trie)
 
 set(HEADER_FILES
-        TrieNode.h
         Trie.h
         )
 

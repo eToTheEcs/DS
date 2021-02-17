@@ -99,15 +99,15 @@ TEST_F(TrieTestFixture, clonedAutocompleteCheck) {
 }
 
 TEST_F(TrieTestFixture, deletionCheck) {
-    t1.remove("pa");
+    ASSERT_EQ(t1.remove("pa"), false);
     ASSERT_EQ(t1.size(), 9);
     std::cout<< t1 <<std::endl;
 
-    t1.remove("pad");
+    ASSERT_EQ(t1.remove("pad"), true);
     ASSERT_EQ(t1.size(), 8);
     std::cout<< t1 <<std::endl;
 
-    t1.remove("catenaria");
+    ASSERT_EQ(t1.remove("catenaria"), true);
     ASSERT_EQ(t1.size(), 7);
     std::cout<< t1 <<std::endl;
 }
