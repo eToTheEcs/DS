@@ -91,7 +91,7 @@ TEST_F(TrieTestFixture, clonedSizeCheck) {
 }
 
 TEST_F(TrieTestFixture, clonedAutocompleteCheck) {
-    for(auto el : expectedAutocompletionResults) {
+    for(const auto& el : expectedAutocompletionResults) {
         std::set<std::string> originalOutput = t1.prefixSearch(el.first);
         std::set<std::string> clonedOutput = cloned.prefixSearch(el.first);
         ASSERT_EQ(originalOutput, clonedOutput);

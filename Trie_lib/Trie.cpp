@@ -23,7 +23,10 @@ Trie::Trie(const Trie& toCopy) : numberOfKeys(toCopy.numberOfKeys) {
     this->clone(this->root, toCopy.root);
 }
 
-Trie::~Trie() = default;
+Trie::~Trie() {
+    std::cout<<"Trie destructor called\n";
+    Trie::_clear(this->root);
+}
 
 int Trie::size() const {
     return this->numberOfKeys;
@@ -96,6 +99,24 @@ Trie::TrieNode* Trie::_delete(const std::string& key, int keyIndex, TrieNode* ro
     }
 
     return root;
+}
+
+void Trie::_clear(Trie::TrieNode* root) {
+
+    if(root == nullptr) {
+        return;
+    }
+
+    //std::cout<<"\nI'm at node \n"<<*root<<"\n";
+
+    std::map<char, TrieNode*> child = root->getChildren();
+    for (auto &it : child) {
+        _clear(it.second);
+    }
+
+    //std::cout<<"node: "<< *root <<"\ndeleting...\n";
+    delete root;
+    //std::cout<<"deleted\n\n";
 }
 
 bool Trie::remove(const std::string& key) {

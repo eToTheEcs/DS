@@ -10,7 +10,12 @@ Trie::TrieNode::TrieNode(const TrieNode& toCopy) {
     this->children = toCopy.children;
 }
 
-Trie::TrieNode::~TrieNode() = default;
+Trie::TrieNode::~TrieNode() {
+    std::cout<<"TrieNode destructor called\n";
+    /*for(auto& it : this->children) {
+        delete it.second;
+    }*/
+}
 
 bool Trie::TrieNode::isEndOfWord() const {
     return this->endOfWord;
@@ -57,16 +62,20 @@ void Trie::TrieNode::removeChild(char symbol) {
     this->children.erase(symbol);
 }
 
-std::ostream& Trie::TrieNode::operator<<(std::ostream& out) {
-    out<< "EOW: " << this->endOfWord << std::endl;
-    out<< "NODE HAS " << this->children.size() << " CHILDREN" << std::endl;
+std::ostream& operator<<(std::ostream& out, const Trie::TrieNode& node) {
+    out<< "EOW: " << node.endOfWord << std::endl;
+    out<< "NODE HAS " << node.children.size() << " CHILDREN" <<std::endl;
     out<< "{ ";
 
-    auto it = this->children.begin();
-    auto secondLast = std::prev(this->children.end(), 1);
-    for(; it != secondLast; it++)
-        out<< it->first << ", ";
-    out<< it->first << " } "<< std::endl;
+    if(!node.children.empty()) {
+        auto it = node.children.begin();
+        auto secondLast = std::prev(node.children.end(), 1);
+        for (; it != secondLast; it++)
+            out << it->first << ", ";
+        out<< it->first;
+    }
+
+    out << " }";
 
     return out;
 }
